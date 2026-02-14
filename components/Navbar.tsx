@@ -12,13 +12,13 @@ const Navbar: React.FC = () => {
   if (isCSPage) return null;
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 h-24 flex items-center shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 h-20 md:h-24 flex items-center shadow-sm">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 w-full h-full">
         <div className="flex justify-between items-center h-full relative">
 
           {/* Left Side: Navigation / Context */}
-          <div className="flex-1 flex items-center gap-8">
-            <div className="h-14 md:h-16 w-auto flex items-center">
+          <div className="flex-1 flex items-center gap-4 md:gap-8">
+            <div className="h-10 md:h-16 w-auto flex items-center">
               <img
                 src={logo2}
                 alt="SNS College of Technology"
@@ -27,32 +27,32 @@ const Navbar: React.FC = () => {
             </div>
             {!isHome && (
               <button
-                className="flex items-center text-sm font-black hover:text-primary transition-all uppercase tracking-[0.2em] text-slate-800 group"
+                className="flex items-center text-[10px] md:text-sm font-black hover:text-primary transition-all uppercase tracking-[0.2em] text-slate-800 group"
                 onClick={() => navigate('/')}
               >
-                <span className="material-icons text-2xl mr-2 group-hover:-translate-x-1 transition-transform">arrow_back</span>
-                Home
+                <span className="material-icons text-xl md:text-2xl mr-1 md:mr-2 group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                <span className="hidden xs:inline">Home</span>
               </button>
             )}
           </div>
 
-          {/* Center: Clear Area */}
-          <div className="hidden md:block flex-1"></div>
+          {/* Center: Clear Area (Hidden on mobile to save space) */}
+          <div className="hidden lg:block flex-1"></div>
 
-          {/* Right Side: SNS Institutions Branding Banner */}
-          <div className="flex-2 flex justify-end items-center h-full gap-8">
-            <div className="h-14 md:h-16 w-auto flex items-center justify-end">
+          {/* Right Side: SNS Institutions Branding Banner (Hidden on mobile) */}
+          <div className="flex items-center justify-end h-full gap-4 md:gap-8">
+            <div className="h-10 md:h-16 w-auto hidden sm:flex items-center justify-end">
               <img
                 src={brandingImg}
                 alt="1000 Startups GenAI"
                 className="h-full w-auto object-contain"
               />
             </div>
-            <div className="h-14 md:h-16 w-auto flex items-center justify-end">
+            <div className="h-12 md:h-16 w-auto flex items-center justify-end">
               <img
                 src="https://snsgroups.com/wp-content/uploads/2024/01/sns-logo-1.png"
                 alt="SNS Institutions Branding"
-                className="h-full w-auto object-contain"
+                className="h-full w-auto object-contain max-w-[140px] md:max-w-none"
                 title="SNS Institutions: Building 1000 AI-Startups"
                 loading="eager"
                 onError={(e) => {

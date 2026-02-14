@@ -39,28 +39,30 @@ const ComputerScienceEvents: React.FC = () => {
       `}} />
 
             {/* Navigation */}
-            <nav className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-black/5">
-                <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-                    <div className="flex items-center gap-6">
-                        <div className="h-16 w-auto flex items-center">
+            <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl border-b border-black/5">
+                <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 md:h-24 flex items-center justify-between">
+                    <div className="flex items-center gap-2 md:gap-6">
+                        <div className="h-10 md:h-16 w-auto flex items-center">
                             <img src={logo2} alt="SNS College of Technology" className="h-full w-auto object-contain" />
                         </div>
-                        <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 bg-accent-black flex items-center justify-center rounded-none rotate-3">
-                                <span className="material-icons text-primary font-black -rotate-3">terminal</span>
+                        <div className="flex items-center gap-2">
+                            <div className="w-8 h-8 md:w-12 md:h-12 bg-accent-black flex items-center justify-center rounded-none rotate-3">
+                                <span className="material-icons text-primary font-black -rotate-3 text-sm md:text-base">terminal</span>
                             </div>
-                            <span className="text-2xl font-black tracking-tighter uppercase italic">TEXPERIA <span className="text-primary italic">2026</span></span>
+                            <span className="text-lg md:text-2xl font-black tracking-tighter uppercase italic">TEX<span className="md:inline">PERIA</span> <span className="text-primary italic">2026</span></span>
                         </div>
                     </div>
-                    <div className="hidden lg:flex items-center gap-10">
-                        <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#cse">CSE</a>
-                        <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#aiml">AIML</a>
-                        <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#it">IT</a>
-                        <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#aids">AI&DS</a>
-                        <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#iot">CST/CSD/IoT</a>
-                        <div className="flex items-center gap-6 h-14">
-                            <img src={brandingImg} alt="Branding" className="h-full w-auto object-contain" />
-                            <button className="bg-primary text-accent-black px-8 py-3 font-black text-xs uppercase tracking-widest hover:bg-black hover:text-white transition-all active:scale-95">Register Now</button>
+                    <div className="flex items-center gap-4 md:gap-10">
+                        <div className="hidden lg:flex items-center gap-10">
+                            <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#cse">CSE</a>
+                            <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#aiml">AIML</a>
+                            <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#it">IT</a>
+                            <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#aids">AI&DS</a>
+                            <a className="text-xs font-black tracking-widest uppercase text-accent-black hover:text-primary transition-colors" href="#iot">CST/CSD/IoT</a>
+                        </div>
+                        <div className="flex items-center gap-4 md:gap-6 h-10 md:h-14">
+                            <img src={brandingImg} alt="Branding" className="hidden sm:block h-full w-auto object-contain" />
+                            <button className="bg-primary text-accent-black px-4 md:px-8 py-2 md:py-3 font-black text-[10px] md:text-xs uppercase tracking-widest hover:bg-black hover:text-white transition-all active:scale-95">Register</button>
                         </div>
                     </div>
                 </div>
@@ -69,14 +71,14 @@ const ComputerScienceEvents: React.FC = () => {
             {/* Header */}
             <header className="relative pt-48 pb-24 px-6 cyber-grid border-b border-black/5">
                 <div className="max-w-7xl mx-auto text-center">
-                    <div className="inline-block px-6 py-2 mb-8 bg-accent-black text-primary font-black text-xs uppercase tracking-[0.4em]">
+                    <div className="inline-block px-4 md:px-6 py-2 mb-6 md:mb-8 bg-accent-black text-primary font-black text-[10px] md:text-xs uppercase tracking-[0.4em]">
                         Departmental Matrix
                     </div>
-                    <h1 className="text-7xl md:text-9xl title-bold mb-8 uppercase leading-tight text-accent-black">
+                    <h1 className="text-4xl sm:text-7xl md:text-9xl title-bold mb-6 md:mb-8 uppercase leading-tight text-accent-black">
                         COMPUTER <br />
                         <span className="text-primary italic">SCIENCE</span>
                     </h1>
-                    <p className="max-w-3xl mx-auto text-slate-500 text-lg md:text-xl font-medium leading-relaxed">
+                    <p className="max-w-3xl mx-auto text-slate-500 text-base md:text-xl font-medium leading-relaxed">
                         The epicenter of innovation at TEXPERIA 2026. Explore the cutting-edge competitions across five distinct engineering domains.
                     </p>
                 </div>

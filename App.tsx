@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ComputerScienceEvents from './pages/ComputerScienceEvents';
-import NonCSDomain from './pages/NonCSDomain';
 import SplashScreen from './components/SplashScreen';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -32,7 +31,6 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/cs" element={<ComputerScienceEvents />} />
-              <Route path="/non-cs" element={<NonCSDomain />} />
             </Routes>
           </main>
           <Footer />

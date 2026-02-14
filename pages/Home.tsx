@@ -57,34 +57,34 @@ const Home: React.FC = () => {
             <div className="inline-block bg-primary px-4 py-1 mb-6 rounded shadow-sm">
               <span className="text-black font-bold tracking-widest uppercase text-[10px]">National Level Symposium</span>
             </div>
-            <h1 className="font-display font-black text-6xl md:text-9xl tracking-tighter mb-4 flex flex-wrap justify-center items-center gap-x-4 text-slate-900">
+            <h1 className="font-display font-black text-4xl sm:text-6xl md:text-9xl tracking-tighter mb-4 flex flex-wrap justify-center items-center gap-x-4 text-slate-900 leading-tight">
               <span className="text-primary italic">TEX</span>
               <span>PERIA</span>
               <span className="text-primary">2026</span>
             </h1>
             <div className="bg-black text-white px-6 py-2 rounded-full mb-8 shadow-xl transform -rotate-2 inline-flex items-center gap-2">
-              <span className="font-display text-xl md:text-2xl tracking-widest">
+              <span className="font-display text-lg sm:text-xl md:text-2xl tracking-widest">
                 "BEYOND <span className="text-primary">BOOKS</span>"
               </span>
               <span className="material-symbols-outlined text-primary">auto_stories</span>
             </div>
-            
+
             <CountdownTimer />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 w-full max-w-2xl mb-16">
               <InfoCard icon="calendar_month" title="Event Date" detail="12 & 13 MARCH 2026" />
               <InfoCard icon="location_on" title="Location" detail="SNSCT, COIMBATORE" />
             </div>
 
             <div className="relative w-full max-w-4xl group">
-              <div className="bg-black text-white p-8 md:p-12 rounded-[2rem] flex flex-col md:flex-row items-center justify-center gap-8 shadow-2xl relative z-10 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+              <div className="bg-black text-white p-6 md:p-12 rounded-[2rem] flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 shadow-2xl relative z-10 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
                 <div className="text-center md:text-left">
-                  <h2 className="text-4xl md:text-5xl font-display font-black leading-none">PRIZE <br className="hidden md:block"/> POOL</h2>
+                  <h2 className="text-3xl md:text-5xl font-display font-black leading-none uppercase">PRIZE <br className="hidden md:block" /> POOL</h2>
                 </div>
                 <div className="h-1 w-20 md:h-20 md:w-1 bg-primary"></div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-primary font-display text-8xl md:text-[8rem] font-black leading-none">10</span>
-                  <span className="text-white font-display text-4xl md:text-6xl font-bold uppercase italic">Lakhs</span>
+                  <span className="text-primary font-display text-6xl sm:text-8xl md:text-[8rem] font-black leading-none">10</span>
+                  <span className="text-white font-display text-2xl sm:text-4xl md:text-6xl font-bold uppercase italic">Lakhs</span>
                 </div>
               </div>
               <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3 rounded-[2rem] -z-10 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
@@ -105,26 +105,19 @@ const Home: React.FC = () => {
       </section>
 
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-display font-black text-center mb-16 italic text-black uppercase tracking-tighter">Choose Your Path</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <DomainCard 
-            id="cs" 
-            title="COMPUTER SCIENCE DOMAIN" 
-            description="Explore hackathons, coding challenges, and tech workshops tailored for the digital future."
-            bgLabel="CODE"
-            accentColor="text-primary"
-            icon="terminal"
-            onClick={() => navigate('/cs')}
-          />
-          <DomainCard 
-            id="noncs" 
-            title="NON-COMPUTER DOMAIN" 
-            description="Mechanical, Electrical, Civil, and Management challenges designed for well-rounded innovation."
-            bgLabel="CORE"
-            accentColor="text-white"
-            icon="settings_suggest"
-            onClick={() => navigate('/non-cs')}
-          />
+        <h2 className="text-4xl md:text-5xl font-display font-black text-center mb-16 italic text-black uppercase tracking-tighter">Explore the Domain</h2>
+        <div className="flex justify-center">
+          <div className="w-full max-w-2xl">
+            <DomainCard
+              id="cs"
+              title="COMPUTER SCIENCE DOMAIN"
+              description="Explore hackathons, coding challenges, and tech workshops tailored for the digital future."
+              bgLabel="CODE"
+              accentColor="text-primary"
+              icon="terminal"
+              onClick={() => navigate('/cs')}
+            />
+          </div>
         </div>
       </section>
     </div>
@@ -154,7 +147,7 @@ const StatItem = ({ value, label }: { value: number; label: string }) => {
 };
 
 const DomainCard = ({ title, description, bgLabel, accentColor, icon, onClick }: any) => (
-  <div 
+  <div
     onClick={onClick}
     className="group relative cursor-pointer overflow-hidden rounded-[2.5rem] bg-zinc-950 aspect-square flex flex-col justify-end p-8 md:p-10 transition-all hover:-translate-y-2 border border-zinc-800 shadow-2xl"
   >
