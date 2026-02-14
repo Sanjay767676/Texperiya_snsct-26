@@ -105,19 +105,26 @@ const Home: React.FC = () => {
       </section>
 
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-display font-black text-center mb-16 italic text-black uppercase tracking-tighter">Explore the Domain</h2>
-        <div className="flex justify-center">
-          <div className="w-full max-w-2xl">
-            <DomainCard
-              id="cs"
-              title="COMPUTER SCIENCE DOMAIN"
-              description="Explore hackathons, coding challenges, and tech workshops tailored for the digital future."
-              bgLabel="CODE"
-              accentColor="text-primary"
-              icon="terminal"
-              onClick={() => navigate('/cs')}
-            />
-          </div>
+        <h2 className="text-4xl md:text-5xl font-display font-black text-center mb-16 italic text-black uppercase tracking-tighter">Choose Your Path</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <DomainCard
+            id="cs"
+            title="COMPUTER SCIENCE DOMAIN"
+            description="Explore hackathons, coding challenges, and tech workshops tailored for the digital future."
+            bgLabel="CODE"
+            accentColor="text-primary"
+            icon="terminal"
+            onClick={() => navigate('/cs')}
+          />
+          <DomainCard
+            id="noncs"
+            title="NON-COMPUTER DOMAIN"
+            description="Mechanical, Electrical, Civil, and Management challenges designed for well-rounded innovation."
+            bgLabel="CORE"
+            accentColor="text-white"
+            icon="settings_suggest"
+            onClick={() => navigate('/non-cs')}
+          />
         </div>
       </section>
     </div>

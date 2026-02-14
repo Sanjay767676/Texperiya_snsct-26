@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../images/SNS Institutions Logo.png';
 
-const SplashScreen: React.FC = () => {
-    const [isVisible, setIsVisible] = useState(true);
+interface SplashScreenProps {
+    isExiting?: boolean;
+}
 
+const SplashScreen: React.FC<SplashScreenProps> = ({ isExiting = false }) => {
     return (
-        <div className={`fixed inset-0 z-[100] bg-black flex items-center justify-center transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`fixed inset-0 z-[100] bg-black flex items-center justify-center transition-opacity duration-1000 ${isExiting ? 'opacity-0' : 'opacity-100'}`}>
             <style dangerouslySetInnerHTML={{
                 __html: `
                 @keyframes glitch-in {
@@ -21,26 +23,9 @@ const SplashScreen: React.FC = () => {
                     90% { filter: brightness(2) blur(2px); }
                     100% { filter: brightness(1); opacity: 1; transform: scale(1.05); }
                 }
-                
-                @keyframes scanline {
-                    0% { transform: translateY(-100%); }
-                    100% { transform: translateY(100%); }
-                }
 
                 .animate-glitch {
                     animation: glitch-in 1.5s ease-out forwards;
-                }
-
-                .scanline {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 2px;
-                    background: rgba(255, 193, 7, 0.5);
-                    box-shadow: 0 0 10px #FFC107;
-                    animation: scanline 2s linear infinite;
-                    pointer-events: none;
                 }
 
                 .logo-shadow {
@@ -50,7 +35,6 @@ const SplashScreen: React.FC = () => {
             }} />
 
             <div className="relative flex items-center justify-center overflow-hidden p-10">
-                <div className="scanline" style={{ animationDuration: '1.5s', opacity: 0.3 }}></div>
                 <img
                     src={logo}
                     alt="SNS Institutions"
