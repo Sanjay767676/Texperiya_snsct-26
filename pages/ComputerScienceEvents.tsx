@@ -1,6 +1,6 @@
 import React from 'react';
-import brandingImg from '../1000 Startups - SNS Group - GenAI 1.png';
-import logo2 from '../logo2.png';
+import brandingImg from '../images/1000 Startups - SNS Group - GenAI 1.png';
+import logo2 from '../images/logo2.png';
 
 const ComputerScienceEvents: React.FC = () => {
     return (
