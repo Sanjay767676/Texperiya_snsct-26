@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEXPERIA 2026 | SNS College of Technology</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Bebas+Neue&family=Sacramento&family=Oswald:wght@400;700&family=Inter:wght@400;500;600;800&family=Orbitron:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FFC107",
+            secondary: "#111111",
+            "background-light": "#FFFFFF",
+          },
+          fontFamily: {
+            display: ["Oswald", "sans-serif"],
+            montserrat: ["Montserrat", "sans-serif"],
+            accent: ["Bebas Neue", "cursive"],
+            script: ["Sacramento", "cursive"],
+            handwriting: ["Dancing Script", "cursive"],
+            digital: ["Orbitron", "sans-serif"],
+            sans: ["Inter", "sans-serif"],
+          }
+        }
+      }
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .text-outline {
+        -webkit-text-stroke: 1px black;
+        color: transparent;
+      }
+      .timer-glow {
+        text-shadow: 0 0 30px rgba(255, 193, 7, 0.6);
+      }
+      .event-card-hover {
+        @apply transition-all duration-300;
+      }
+      .event-card-hover:hover {
+        @apply -translate-y-2;
+      }
+      .poster-gradient {
+        background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+      }
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white text-slate-900">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
