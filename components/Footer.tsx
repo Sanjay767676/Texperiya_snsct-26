@@ -1,13 +1,6 @@
-
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import instagramLogo from '../images/instagram.png';
 
 const Footer: React.FC = () => {
-  const location = useLocation();
-  const isCSPage = location.pathname === '/cs';
-
-  if (isCSPage) return null;
-
   return (
     <footer className="bg-black text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,9 +11,14 @@ const Footer: React.FC = () => {
               SNS College of Technology is committed to building the future of innovation through student excellence and purpose-driven culture.
             </p>
             <div className="flex gap-4">
-              <SocialIcon icon="facebook" />
-              <SocialIcon icon="instagram" />
-              <SocialIcon icon="twitter" />
+              <a
+                className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-primary transition-all group overflow-hidden"
+                href="https://www.instagram.com/texperia_2k26/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={instagramLogo} alt="Instagram" className="w-5 h-5 object-contain" />
+              </a>
             </div>
           </div>
           <div>
@@ -28,7 +26,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <ContactLink icon="phone" text="75503 16701" />
               <ContactLink icon="phone" text="75503 16708" />
-              <ContactLink icon="mail" text="texperia@snsgroups.com" />
             </ul>
           </div>
           <div>
@@ -56,12 +53,6 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-
-const SocialIcon = ({ icon }: { icon: string }) => (
-  <a className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-primary hover:text-black transition-colors" href="#">
-    <span className="material-icons text-lg">{icon === 'twitter' ? 'close' : icon}</span>
-  </a>
-);
 
 const ContactLink = ({ icon, text }: { icon: string; text: string }) => (
   <li className="flex items-center gap-3">

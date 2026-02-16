@@ -7,9 +7,6 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isHome = location.pathname === '/';
-  const isCSPage = location.pathname === '/cs';
-
-  if (isCSPage) return null;
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 h-20 md:h-24 flex items-center shadow-sm">

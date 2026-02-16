@@ -57,10 +57,10 @@ const Home: React.FC = () => {
             <div className="inline-block bg-primary px-4 py-1 mb-6 rounded shadow-sm">
               <span className="text-black font-bold tracking-widest uppercase text-[10px]">National Level Symposium</span>
             </div>
-            <h1 className="font-display font-black text-4xl sm:text-6xl md:text-9xl tracking-tighter mb-4 flex flex-wrap justify-center items-center gap-x-4 text-slate-900 leading-tight">
+            <h1 className="font-display font-black text-5xl sm:text-7xl md:text-9xl tracking-[[-0.05em]] mb-4 flex flex-wrap justify-center items-center text-slate-950 leading-none lg:leading-tight">
               <span className="text-primary italic">TEX</span>
-              <span>PERIA</span>
-              <span className="text-primary">2026</span>
+              <span className="text-slate-950">PERIA</span>
+              <span className="text-primary ml-4 md:ml-6">2026</span>
             </h1>
             <div className="bg-black text-white px-6 py-2 rounded-full mb-8 shadow-xl transform -rotate-2 inline-flex items-center gap-2">
               <span className="font-display text-lg sm:text-xl md:text-2xl tracking-widest">
@@ -111,19 +111,19 @@ const Home: React.FC = () => {
           {/* Computer Science Button */}
           <button
             onClick={() => navigate('/cs')}
-            className="group relative w-full sm:w-auto px-10 py-5 bg-white border-[3px] border-black rounded-[18px_32px_15px_28px] flex items-center justify-between sm:justify-center gap-6 transition-all hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(255,193,7,1)] active:translate-x-1 active:translate-y-0 active:shadow-none"
+            className="group relative w-full sm:w-auto px-10 py-5 bg-white hover:bg-primary border-[3px] border-black rounded-[18px_32px_15px_28px] flex items-center justify-between sm:justify-center gap-6 transition-all hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none"
           >
-            <span className="text-2xl md:text-3xl font-display font-bold text-slate-900 tracking-tight italic">Computer Science</span>
-            <span className="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
+            <span className="text-2xl md:text-3xl font-display font-bold text-black tracking-tight italic">Computer Science</span>
+            <span className="material-symbols-outlined text-4xl text-black group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
           </button>
 
           {/* Non-Computer Science Button */}
           <button
             onClick={() => navigate('/non-cs')}
-            className="group relative w-full sm:w-auto px-10 py-5 bg-white border-[3px] border-black rounded-[28px_15px_32px_18px] flex items-center justify-between sm:justify-center gap-6 transition-all hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] active:translate-x-1 active:translate-y-0 active:shadow-none"
+            className="group relative w-full sm:w-auto px-10 py-5 bg-white hover:bg-primary border-[3px] border-black rounded-[28px_15px_32px_18px] flex items-center justify-between sm:justify-center gap-6 transition-all hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none"
           >
-            <span className="text-2xl md:text-3xl font-display font-bold text-slate-900 tracking-tight italic">Non Computer Science</span>
-            <span className="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
+            <span className="text-2xl md:text-3xl font-display font-bold text-black tracking-tight italic transition-colors">Non Computer Science</span>
+            <span className="material-symbols-outlined text-4xl text-black group-hover:translate-x-2 transition-all duration-300">arrow_forward</span>
           </button>
         </div>
       </section>
