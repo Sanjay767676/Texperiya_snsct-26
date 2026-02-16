@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import brandingImg from '../images/1000 Startups - SNS Group - GenAI 1.png';
 import logo2 from '../images/logo2.png';
-import snsInstitutionsLogo from '../images/SNS Institutions Logo.png';
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
@@ -36,19 +35,11 @@ const Navbar: React.FC = () => {
 
           {/* Right Side: SNS Institutions Branding Banner */}
           <div className="flex items-center justify-end h-full gap-1 sm:gap-4 md:gap-8 overflow-hidden">
-            <div className="h-8 sm:h-12 md:h-16 w-auto flex items-center justify-end">
+            <div className="h-10 md:h-16 w-auto flex items-center justify-end">
               <img
                 src={brandingImg}
                 alt="1000 Startups GenAI"
                 className="h-full w-auto object-contain"
-              />
-            </div>
-            <div className="h-10 sm:h-14 md:h-16 w-auto flex items-center justify-end">
-              <img
-                src={snsInstitutionsLogo}
-                alt="SNS Institutions"
-                className="h-full w-auto object-contain max-w-[80px] sm:max-w-[140px] md:max-w-none"
-                loading="eager"
               />
             </div>
           </div>
