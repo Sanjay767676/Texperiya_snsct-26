@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import brandingImg from '../images/1000 Startups - SNS Group - GenAI 1.png';
 import logo2 from '../images/logo2.png';
+import snsInstitutionsLogo from '../images/SNS Institutions Logo.png';
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
@@ -10,11 +11,11 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 h-20 md:h-24 flex items-center shadow-sm">
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 w-full h-full">
+      <div className="max-w-[1600px] mx-auto px-2 sm:px-6 lg:px-8 w-full h-full">
         <div className="flex justify-between items-center h-full relative">
 
           {/* Left Side: Navigation / Context */}
-          <div className="flex-1 flex items-center gap-4 md:gap-8">
+          <div className="flex-none flex items-center gap-2 md:gap-8">
             <div className="h-10 md:h-16 w-auto flex items-center">
               <img
                 src={logo2}
@@ -33,11 +34,8 @@ const Navbar: React.FC = () => {
             )}
           </div>
 
-          {/* Center: Clear Area (Hidden on mobile to save space) */}
-          <div className="hidden lg:block flex-1"></div>
-
           {/* Right Side: SNS Institutions Branding Banner */}
-          <div className="flex items-center justify-end h-full gap-2 md:gap-8">
+          <div className="flex items-center justify-end h-full gap-1 sm:gap-4 md:gap-8 overflow-hidden">
             <div className="h-8 sm:h-12 md:h-16 w-auto flex items-center justify-end">
               <img
                 src={brandingImg}
@@ -47,14 +45,10 @@ const Navbar: React.FC = () => {
             </div>
             <div className="h-10 sm:h-14 md:h-16 w-auto flex items-center justify-end">
               <img
-                src="https://snsgroups.com/wp-content/uploads/2024/01/sns-logo-1.png"
-                alt="SNS Institutions Branding"
-                className="h-full w-auto object-contain max-w-[100px] sm:max-w-[140px] md:max-w-none"
-                title="SNS Institutions: Building 1000 AI-Startups"
+                src={snsInstitutionsLogo}
+                alt="SNS Institutions"
+                className="h-full w-auto object-contain max-w-[80px] sm:max-w-[140px] md:max-w-none"
                 loading="eager"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://via.placeholder.com/600x120?text=SNS+INSTITUTIONS+BRANDS';
-                }}
               />
             </div>
           </div>
