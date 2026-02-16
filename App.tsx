@@ -14,12 +14,10 @@ const App: React.FC = () => {
   const [isExiting, setIsExiting] = useState(false);
 
   useEffect(() => {
-    // Start exit transition after 3 seconds
     const exitTimer = setTimeout(() => {
       setIsExiting(true);
     }, 3000);
 
-    // Completely remove splash screen after 4 seconds
     const removeTimer = setTimeout(() => {
       setShowSplash(false);
     }, 4000);

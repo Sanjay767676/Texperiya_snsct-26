@@ -105,26 +105,26 @@ const Home: React.FC = () => {
       </section>
 
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-display font-black text-center mb-16 italic text-black uppercase tracking-tighter">Choose Your Path</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <DomainCard
-            id="cs"
-            title="COMPUTER SCIENCE DOMAIN"
-            description="Explore hackathons, coding challenges, and tech workshops tailored for the digital future."
-            bgLabel="CODE"
-            accentColor="text-primary"
-            icon="terminal"
+        <h2 className="text-2xl md:text-4xl font-display font-medium text-center mb-16 text-slate-800 tracking-tight">Choose Your Path</h2>
+
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-8 md:gap-16">
+          {/* Computer Science Button */}
+          <button
             onClick={() => navigate('/cs')}
-          />
-          <DomainCard
-            id="noncs"
-            title="NON-COMPUTER DOMAIN"
-            description="Mechanical, Electrical, Civil, and Management challenges designed for well-rounded innovation."
-            bgLabel="CORE"
-            accentColor="text-white"
-            icon="settings_suggest"
+            className="group relative w-full sm:w-auto px-10 py-5 bg-white border-[3px] border-black rounded-[18px_32px_15px_28px] flex items-center justify-between sm:justify-center gap-6 transition-all hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(255,193,7,1)] active:translate-x-1 active:translate-y-0 active:shadow-none"
+          >
+            <span className="text-2xl md:text-3xl font-display font-bold text-slate-900 tracking-tight italic">Computer Science</span>
+            <span className="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
+          </button>
+
+          {/* Non-Computer Science Button */}
+          <button
             onClick={() => navigate('/non-cs')}
-          />
+            className="group relative w-full sm:w-auto px-10 py-5 bg-white border-[3px] border-black rounded-[28px_15px_32px_18px] flex items-center justify-between sm:justify-center gap-6 transition-all hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] active:translate-x-1 active:translate-y-0 active:shadow-none"
+          >
+            <span className="text-2xl md:text-3xl font-display font-bold text-slate-900 tracking-tight italic">Non Computer Science</span>
+            <span className="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
+          </button>
         </div>
       </section>
     </div>
@@ -153,27 +153,5 @@ const StatItem = ({ value, label }: { value: number; label: string }) => {
   );
 };
 
-const DomainCard = ({ title, description, bgLabel, accentColor, icon, onClick }: any) => (
-  <div
-    onClick={onClick}
-    className="group relative cursor-pointer overflow-hidden rounded-[2.5rem] bg-zinc-950 aspect-square flex flex-col justify-end p-8 md:p-10 transition-all hover:-translate-y-2 border border-zinc-800 shadow-2xl"
-  >
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-      <span className={`font-display font-black text-[12rem] md:text-[18rem] ${accentColor} opacity-10 group-hover:opacity-30 transition-opacity duration-500 tracking-tighter italic`}>
-        {bgLabel}
-      </span>
-    </div>
-    <div className="relative z-10">
-      <div className={`w-14 h-14 md:w-16 md:h-16 ${accentColor.includes('primary') ? 'bg-primary/10' : 'bg-white/10'} rounded-2xl flex items-center justify-center mb-6`}>
-        <span className={`material-symbols-outlined text-4xl md:text-5xl ${accentColor.includes('primary') ? 'text-primary' : 'text-white'}`}>{icon}</span>
-      </div>
-      <h3 className="text-4xl md:text-5xl font-display font-black mb-4 text-white leading-tight">{title}</h3>
-      <p className="text-sm md:text-base text-zinc-400 max-w-md mb-8">{description}</p>
-      <button className={`${accentColor.includes('primary') ? 'bg-primary' : 'bg-white'} text-black px-6 md:px-8 py-3 md:py-4 rounded-2xl font-black text-base md:text-lg flex items-center gap-3 group-hover:gap-6 transition-all uppercase`}>
-        Explore Events <span className="material-symbols-outlined font-black">arrow_forward</span>
-      </button>
-    </div>
-  </div>
-);
 
 export default Home;
