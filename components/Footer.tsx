@@ -1,3 +1,4 @@
+import React from 'react';
 import instagramLogo from '../images/instagram.png';
 
 const Footer: React.FC = () => {

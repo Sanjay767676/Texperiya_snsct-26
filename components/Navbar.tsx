@@ -36,20 +36,20 @@ const Navbar: React.FC = () => {
           {/* Center: Clear Area (Hidden on mobile to save space) */}
           <div className="hidden lg:block flex-1"></div>
 
-          {/* Right Side: SNS Institutions Branding Banner (Hidden on mobile) */}
-          <div className="flex items-center justify-end h-full gap-4 md:gap-8">
-            <div className="h-10 md:h-16 w-auto hidden sm:flex items-center justify-end">
+          {/* Right Side: SNS Institutions Branding Banner */}
+          <div className="flex items-center justify-end h-full gap-2 md:gap-8">
+            <div className="h-8 sm:h-12 md:h-16 w-auto flex items-center justify-end">
               <img
                 src={brandingImg}
                 alt="1000 Startups GenAI"
                 className="h-full w-auto object-contain"
               />
             </div>
-            <div className="h-12 md:h-16 w-auto flex items-center justify-end">
+            <div className="h-10 sm:h-14 md:h-16 w-auto flex items-center justify-end">
               <img
                 src="https://snsgroups.com/wp-content/uploads/2024/01/sns-logo-1.png"
                 alt="SNS Institutions Branding"
-                className="h-full w-auto object-contain max-w-[140px] md:max-w-none"
+                className="h-full w-auto object-contain max-w-[100px] sm:max-w-[140px] md:max-w-none"
                 title="SNS Institutions: Building 1000 AI-Startups"
                 loading="eager"
                 onError={(e) => {

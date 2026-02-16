@@ -103,7 +103,7 @@ const ComputerScienceEvents: React.FC = () => {
         }
         .workshop-item {
             @apply flex flex-col justify-center transition-colors cursor-default;
-            padding: 10px 45px;
+            padding: 5px 45px;
         }
         .bg-text {
             position: fixed;
