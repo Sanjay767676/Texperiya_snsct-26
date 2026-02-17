@@ -56,9 +56,9 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <div className="inline-block bg-primary px-4 py-1 mb-6 rounded shadow-sm">
-              <span className="text-black font-bold tracking-widest uppercase text-[10px]">National Level Symposium</span>
+              <span className="text-black font-dirtyline tracking-[0.2em] uppercase text-xs">National Level Symposium</span>
             </div>
-            <div className="w-full max-w-[350px] sm:max-w-lg md:max-w-3xl lg:max-w-4xl mx-auto mb-10 px-4 transform hover:scale-[1.02] transition-transform duration-500">
+            <div className="w-full max-w-[400px] sm:max-w-lg md:max-w-5xl lg:max-w-6xl mx-auto mb-10 px-4 transform hover:scale-[1.02] transition-transform duration-500">
               <img
                 src={image1}
                 alt="Texperia 2026 - Beyond Books"

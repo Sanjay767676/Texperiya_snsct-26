@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const isHome = location.pathname === '/';
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 h-20 md:h-24 flex items-center shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 h-20 md:h-32 flex items-center shadow-sm">
       <div className="max-w-[1600px] mx-auto px-2 sm:px-6 lg:px-8 w-full h-full">
         <div className="flex justify-between items-center h-full relative">
 
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
 
           {/* Right Side: SNS Institutions Branding Banner */}
           <div className="flex items-center justify-end h-full gap-1 sm:gap-4 md:gap-8 overflow-hidden">
-            <div className="h-14 md:h-20 w-auto flex items-center justify-end">
+            <div className="h-14 md:h-24 w-auto flex items-center justify-end">
               <img
                 src={brandingImg}
                 alt="1000 Startups GenAI"
