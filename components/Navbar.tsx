@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
 
           {/* Left Side: Navigation / Context */}
           <div className="flex-none flex items-center gap-2 md:gap-8">
-            <div className="h-10 md:h-16 w-auto flex items-center">
+            <div className="h-14 md:h-28 w-auto flex items-center">
               <img
                 src={logo2}
                 alt="SNS College of Technology"
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
 
           {/* Right Side: SNS Institutions Branding Banner */}
           <div className="flex items-center justify-end h-full gap-1 sm:gap-4 md:gap-8 overflow-hidden">
-            <div className="h-10 md:h-16 w-auto flex items-center justify-end">
+            <div className="h-14 md:h-20 w-auto flex items-center justify-end">
               <img
                 src={brandingImg}
                 alt="1000 Startups GenAI"

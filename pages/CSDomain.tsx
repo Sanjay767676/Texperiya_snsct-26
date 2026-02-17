@@ -9,7 +9,7 @@ const CSDomain: React.FC = () => {
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <h2 className="font-handwriting text-primary text-4xl md:text-5xl mb-4">Significant</h2>
           <h1 className="font-display text-5xl md:text-8xl font-black text-slate-900 uppercase tracking-tighter mb-6 leading-none">
-            COMPUTER SCIENCE <br/> <span className="text-primary">DOMAIN</span>
+            COMPUTER SCIENCE <br /> <span className="text-primary">DOMAIN</span>
           </h1>
           <p className="max-w-2xl mx-auto text-slate-600 font-medium text-lg">
             Push your boundaries "Beyond Books" with our core technical challenges designed for the next generation of software engineers.
@@ -35,17 +35,16 @@ const CSDomain: React.FC = () => {
                   <span className="material-icons text-primary text-3xl">{event.icon}</span>
                 </div>
                 <h3 className="font-display text-2xl font-black text-slate-900 uppercase mb-4 leading-tight">{event.title}</h3>
-                <p className="text-slate-600 mb-8 line-clamp-3">
-                  {event.description}
-                </p>
-                <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-100">
-                  <div className="flex flex-col">
-                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Prize Pool</span>
-                    <span className="font-bold text-primary text-xl">{event.prizePool}</span>
+                <div className="opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 origin-top pointer-events-none group-hover:pointer-events-auto">
+                  <p className="text-slate-600 mb-8 line-clamp-3">
+                    {event.description}
+                  </p>
+                  <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-100">
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Prize Pool</span>
+                      <span className="font-bold text-primary text-xl">{event.prizePool}</span>
+                    </div>
                   </div>
-                  <button className="bg-primary hover:bg-yellow-500 text-black px-6 py-2 rounded-full font-bold text-sm transition-all hover:scale-105 shadow-lg shadow-primary/20">
-                    Register Now
-                  </button>
                 </div>
               </div>
             </div>
@@ -63,6 +62,19 @@ const CSDomain: React.FC = () => {
             </button>
           </div>
           <span className="absolute -bottom-12 -right-12 font-display text-[15rem] font-black text-black opacity-5 pointer-events-none select-none italic">CS</span>
+        </div>
+
+        {/* Global Registration Button */}
+        <div className="mt-32 flex justify-center pb-12">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfg3ZGc5LYJTOYtIhRnlj4Ph87Zca2GM93KxevmRafCjUrwew/viewform?usp=sharing&ouid=114073418047323783317"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative w-full sm:w-auto px-16 py-6 bg-white hover:bg-primary border-[4px] border-black rounded-[22px_42px_18px_38px] flex items-center justify-center gap-8 transition-all hover:-translate-y-2 hover:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-xl decoration-none"
+          >
+            <span className="text-3xl md:text-4xl font-black text-black tracking-tight italic uppercase">Register Now</span>
+            <span className="material-symbols-outlined text-5xl text-black group-hover:translate-x-3 transition-transform duration-300 font-bold">arrow_forward</span>
+          </a>
         </div>
       </main>
     </div>

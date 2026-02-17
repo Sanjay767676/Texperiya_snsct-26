@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CountdownTimer from '../components/CountdownTimer';
+import image1 from '../images/image1.png';
 
 const useCountUp = (end: number, duration: number = 2000) => {
   const [count, setCount] = useState(0);
@@ -57,16 +58,12 @@ const Home: React.FC = () => {
             <div className="inline-block bg-primary px-4 py-1 mb-6 rounded shadow-sm">
               <span className="text-black font-bold tracking-widest uppercase text-[10px]">National Level Symposium</span>
             </div>
-            <h1 className="font-display font-black text-5xl sm:text-7xl md:text-9xl tracking-[[-0.05em]] mb-4 flex flex-wrap justify-center items-center text-slate-950 leading-none lg:leading-tight">
-              <span className="text-primary italic">TEX</span>
-              <span className="text-slate-950">PERIA</span>
-              <span className="text-primary ml-4 md:ml-6">2026</span>
-            </h1>
-            <div className="bg-black text-white px-6 py-2 rounded-full mb-8 shadow-xl transform -rotate-2 inline-flex items-center gap-2">
-              <span className="font-display text-lg sm:text-xl md:text-2xl tracking-widest">
-                "BEYOND <span className="text-primary">BOOKS</span>"
-              </span>
-              <span className="material-symbols-outlined text-primary">auto_stories</span>
+            <div className="w-full max-w-[350px] sm:max-w-lg md:max-w-3xl lg:max-w-4xl mx-auto mb-10 px-4 transform hover:scale-[1.02] transition-transform duration-500">
+              <img
+                src={image1}
+                alt="Texperia 2026 - Beyond Books"
+                className="w-full h-auto object-contain mx-auto drop-shadow-2xl"
+              />
             </div>
 
             <CountdownTimer />

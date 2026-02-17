@@ -143,14 +143,14 @@ const ComputerScienceEvents: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-stretch">
 
                     {sections.map((dept) => (
-                        <div key={dept.id} className="flex flex-col gap-6" id={dept.id}>
+                        <div key={dept.id} className="group flex flex-col gap-6" id={dept.id}>
                             {/* Department Header */}
-                            <div className="bg-[#FFC107] border-[3px] border-black rounded-[1.5rem] py-5 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                            <div className="bg-[#FFC107] border-[3px] border-black rounded-[1.5rem] py-5 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:-translate-y-1 transition-all">
                                 <h2 className="text-2xl font-black uppercase tracking-tighter text-center italic">{dept.title}</h2>
                             </div>
 
-                            {/* Column Container - Plain White List */}
-                            <div className="bg-white border-[3px] border-black rounded-[3.5rem] flex flex-col overflow-hidden shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] h-full">
+                            {/* Column Container - Plain White List - Hidden by default, reveals on hover */}
+                            <div className="bg-white border-[3px] border-black rounded-[3.5rem] flex flex-col overflow-hidden shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] h-full opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 origin-top pointer-events-none group-hover:pointer-events-auto">
 
                                 <div className="p-8 flex items-center">
                                     <span className="text-[11px] font-black uppercase tracking-[0.4em] text-slate-400">Events List</span>
@@ -186,17 +186,23 @@ const ComputerScienceEvents: React.FC = () => {
                                     </>
                                 )}
 
-                                {/* Register Action Button */}
-                                <div className="p-10 mt-auto border-t-2 border-black/5 bg-slate-50/10">
-                                    <button className="w-full bg-black text-[#FFC107] py-4 rounded-2xl font-black text-xs uppercase tracking-[0.3em] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:bg-[#FFC107] hover:text-black transition-all active:translate-y-1 active:shadow-none flex items-center justify-center gap-2">
-                                        <span>Register {dept.title}</span>
-                                        <span className="material-icons text-sm">arrow_forward</span>
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     ))}
 
+                </div>
+
+                {/* Footer Registration Button */}
+                <div className="mt-32 flex justify-center pb-20">
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfg3ZGc5LYJTOYtIhRnlj4Ph87Zca2GM93KxevmRafCjUrwew/viewform?usp=sharing&ouid=114073418047323783317"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative w-full sm:w-auto px-16 py-6 bg-white hover:bg-[#FFC107] border-[4px] border-black rounded-[22px_42px_18px_38px] flex items-center justify-center gap-8 transition-all hover:-translate-y-2 hover:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-xl"
+                    >
+                        <span className="text-3xl md:text-4xl font-black text-black tracking-tight italic uppercase">Register Now</span>
+                        <span className="material-symbols-outlined text-5xl text-black group-hover:translate-x-3 transition-transform duration-300 font-bold">arrow_forward</span>
+                    </a>
                 </div>
             </main>
         </div>

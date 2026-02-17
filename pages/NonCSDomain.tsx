@@ -50,16 +50,13 @@ const NonCSDomain: React.FC = () => {
                 </div>
                 <div className="p-10 flex flex-col flex-grow">
                   <h3 className="font-accent text-4xl mb-4 text-slate-900 leading-none">{event.title}</h3>
-                  <p className="text-gray-600 text-base mb-8 flex-grow">
-                    {event.description}
-                  </p>
-                  <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-100">
+                  <div className="opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 origin-top pointer-events-none group-hover:pointer-events-auto">
+                    <p className="text-gray-600 text-base mb-8 flex-grow">
+                      {event.description}
+                    </p>
                     <span className="font-accent text-2xl text-slate-900">
                       {event.prizePool} <span className="text-xs font-montserrat font-bold text-gray-500 uppercase ml-1">Prizes</span>
                     </span>
-                    <button className="bg-secondary text-primary hover:bg-zinc-800 px-8 py-2.5 rounded-xl font-black transition-all hover:scale-105 uppercase text-sm tracking-wider shadow-lg">
-                      REGISTER
-                    </button>
                   </div>
                 </div>
               </div>
@@ -69,10 +66,10 @@ const NonCSDomain: React.FC = () => {
           <div className="mt-24 flex flex-col md:flex-row items-center justify-between gap-10 p-12 bg-secondary text-white rounded-[4rem] shadow-2xl relative overflow-hidden group">
             <div className="flex items-center gap-10 relative z-10">
               <div className="bg-white p-5 rounded-3xl rotate-3 group-hover:rotate-0 transition-transform shadow-xl">
-                <img 
-                  alt="Registration QR Code" 
-                  className="w-24 h-24" 
-                  src="https://picsum.photos/200/200?random=qr" 
+                <img
+                  alt="Registration QR Code"
+                  className="w-24 h-24"
+                  src="https://picsum.photos/200/200?random=qr"
                 />
               </div>
               <div>
@@ -91,13 +88,21 @@ const NonCSDomain: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Global Registration Button Section */}
+        <div className="mt-32 flex justify-center pb-12">
+          <button className="group relative w-full sm:w-auto px-16 py-6 bg-white hover:bg-primary border-[4px] border-black rounded-[22px_42px_18px_38px] flex items-center justify-center gap-8 transition-all hover:-translate-y-2 hover:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-xl">
+            <span className="text-3xl md:text-4xl font-black text-black tracking-tight italic uppercase">Register Now</span>
+            <span className="material-symbols-outlined text-5xl text-black group-hover:translate-x-3 transition-transform duration-300 font-bold">arrow_forward</span>
+          </button>
+        </div>
       </section>
 
       <section className="py-32 bg-background-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 className="font-accent text-7xl mb-12 text-slate-900 leading-none">GET IN <br/><span className="text-primary">TOUCH</span></h2>
+              <h2 className="font-accent text-7xl mb-12 text-slate-900 leading-none">GET IN <br /><span className="text-primary">TOUCH</span></h2>
               <div className="space-y-10">
                 <ContactItem icon="call" label="Hotline" value="75503 16701 / 08" />
                 <ContactItem icon="location_on" label="Venue" value="SNSCT, Coimbatore, TN" />
@@ -118,7 +123,7 @@ const NonCSDomain: React.FC = () => {
 const Badge = ({ value, label, dark = false }: any) => (
   <div className={`${dark ? 'bg-secondary text-white' : 'bg-white/30 backdrop-blur-md border border-secondary/10'} px-8 py-5 rounded-2xl flex items-center gap-5 shadow-xl`}>
     <div className="text-5xl font-black font-display leading-none">{value}</div>
-    <div className="text-[10px] uppercase font-bold leading-tight tracking-widest">{label.split(' ')[0]}<br/>{label.split(' ')[1]}</div>
+    <div className="text-[10px] uppercase font-bold leading-tight tracking-widest">{label.split(' ')[0]}<br />{label.split(' ')[1]}</div>
   </div>
 );
 
