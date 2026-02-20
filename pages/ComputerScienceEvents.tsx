@@ -22,7 +22,8 @@ const ComputerScienceEvents: React.FC = () => {
             workshops: [
                 "Technical Workshop",
                 "Agentic AI Workshop"
-            ]
+            ],
+            contact: "Student Coordinator: +91 00000 00000"
         },
         {
             id: "aids",
@@ -35,7 +36,8 @@ const ComputerScienceEvents: React.FC = () => {
                 "Code Rush",
                 "Prompt Idol"
             ],
-            workshops: []
+            workshops: [],
+            contact: "Student Coordinator: +91 00000 00000"
         },
         {
             id: "aiml",
@@ -49,7 +51,8 @@ const ComputerScienceEvents: React.FC = () => {
             ],
             workshops: [
                 "AI Workshop"
-            ]
+            ],
+            contact: "Student Coordinator: +91 00000 00000"
         },
         {
             id: "it",
@@ -62,7 +65,8 @@ const ComputerScienceEvents: React.FC = () => {
                 "Webathon",
                 "Vibe Ops"
             ],
-            workshops: []
+            workshops: [],
+            contact: "Student Coordinator: +91 00000 00000"
         },
         {
             id: "iot",
@@ -79,7 +83,8 @@ const ComputerScienceEvents: React.FC = () => {
             ],
             workshops: [
                 "Stream Lit Workshop"
-            ]
+            ],
+            contact: "Student Coordinator: +91 00000 00000"
         }
     ];
 
@@ -153,13 +158,13 @@ const ComputerScienceEvents: React.FC = () => {
                             <div className="bg-white border-[3px] border-black rounded-[3.5rem] flex flex-col overflow-hidden shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] h-full opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 origin-top pointer-events-none group-hover:pointer-events-auto">
 
                                 <div className="p-8 flex items-center">
-                                    <span className="text-[11px] font-black uppercase tracking-[0.4em] text-slate-400">Events List</span>
+                                    <span className="text-[14px] font-black uppercase tracking-[0.4em] text-black italic">Events List</span>
                                 </div>
 
                                 <div className="flex flex-col pb-8">
                                     {dept.events.map((event, idx) => (
                                         <div key={idx} className="event-item">
-                                            <h3 className="font-space font-black text-[16px] uppercase leading-none tracking-tight text-black">
+                                            <h3 className="font-space font-black text-[20px] uppercase leading-none tracking-tight text-black text-center">
                                                 {event}
                                             </h3>
                                         </div>
@@ -170,13 +175,13 @@ const ComputerScienceEvents: React.FC = () => {
                                 {dept.workshops.length > 0 && (
                                     <>
                                         <div className="p-8 border-t-2 border-black/10 flex items-center">
-                                            <span className="text-[11px] font-black uppercase tracking-[0.4em] text-black">Workshops</span>
+                                            <span className="text-[14px] font-black uppercase tracking-[0.4em] text-black italic">Workshops</span>
                                         </div>
                                         <div className="flex flex-col pb-8">
                                             {dept.workshops.map((ws, idx) => (
                                                 <div key={idx} className="workshop-item">
                                                     <div className="flex flex-col gap-2">
-                                                        <h3 className="font-space font-black text-[16px] uppercase leading-none tracking-tight text-black">
+                                                        <h3 className="font-space font-black text-[20px] uppercase leading-none tracking-tight text-black text-center">
                                                             {ws}
                                                         </h3>
                                                     </div>
@@ -185,6 +190,16 @@ const ComputerScienceEvents: React.FC = () => {
                                         </div>
                                     </>
                                 )}
+
+                                {/* Contact Section */}
+                                <div className="mt-auto px-8 pt-4 pb-2 border-t-2 border-dashed border-black/10">
+                                    <p className="text-[11px] font-black uppercase tracking-wider text-black/60 text-center italic">
+                                        {dept.contact}
+                                    </p>
+                                </div>
+
+                                {/* Per-department Registration Button (Only shown on Non-CS as per requirement, but keeping here for consistency if needed, wait user said Non-CS Only last turn) */}
+                                {/* Restore global footer button for CS page was the revert. So I'll just leave this as is. */}
 
                             </div>
                         </div>

@@ -1,156 +1,327 @@
-
 import React from 'react';
-import { NON_CS_EVENTS } from '../constants';
+import { useNavigate } from 'react-router-dom';
 
 const NonCSDomain: React.FC = () => {
+  const navigate = useNavigate();
+
+  const sections = [
+    {
+      id: "aero",
+      title: "AERO",
+      events: [
+        "Water Rocketry",
+        "Glide Craft",
+        "Poster Presentation",
+        "Quiz Arena",
+        "Mach Hunt",
+        "SkySketch 3D",
+        "AeroGenesis  Expo",
+        "Idea to Impact (Ideathon)"
+      ],
+      workshops: [
+        "Workshop on 3D Printing"
+      ],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "agri",
+      title: "AGRI",
+      events: [
+        "Plough Your Brain - Quiz Quest",
+        "Project Presentation",
+        "Seed Detectives",
+        "Farm Gear Flash"
+      ],
+      workshops: [
+        "Plough to Processor: Robotics"
+      ],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "auto",
+      title: "AUTO",
+      events: [
+        "Auto Quiz",
+        "Paper Presentation",
+        "Auto Show",
+        "Slow Bike Race"
+      ],
+      workshops: [
+        "e-Vehicle Workshop"
+      ],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "bme",
+      title: "BME",
+      events: [
+        "Bionexus (Poster)",
+        "BioGenesis (Ideathon)",
+        "Blind Fold",
+        "Medxplore (Paper)",
+        "Biofluxtron",
+        "Once upon a Mic",
+        "Movie Scene Recreation"
+      ],
+      workshops: [
+        "Hands on training in IoT"
+      ],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "civil",
+      title: "CIVIL",
+      events: [
+        "Code Cracking",
+        "CAD Modelling Quest",
+        "Aquahack",
+        "Map Charades",
+        "Dumb Civil Charades",
+        "Colour Your Thoughts",
+        "Construct your Dream",
+        "Tech Showcase"
+      ],
+      workshops: [],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "ece",
+      title: "ECE",
+      events: [
+        "Innovatrix (Hackathon)",
+        "Electroforge",
+        "Solo and Group dance",
+        "Prompt AI",
+        "App Pitching",
+        "SparkX (Paper Presentation)",
+        "IPL Team Builder Auction",
+        "Electroverse"
+      ],
+      workshops: [],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "eee",
+      title: "EEE",
+      events: [
+        "E-Sports",
+        "Short film",
+        "Gaming",
+        "Protothon",
+        "Quad Killer Quest",
+        "Reel Creation",
+        "Paper Presentation",
+        "Build it in 60"
+      ],
+      workshops: [],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "ft",
+      title: "FT",
+      events: [
+        "Reverse Debate",
+        "Paper Presenation",
+        "Flameless Cooking",
+        "Treasure Hunt",
+        "Be a Chef",
+        "Dark Kitchen Detectives",
+        "Short film",
+        "Fruit and Vegetable Carving",
+        "Ideafest"
+      ],
+      workshops: [
+        "Technical Workshop"
+      ],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "mct",
+      title: "MCT",
+      events: [
+        "Technical Quiz",
+        "Line Follower",
+        "Start Up Presentation",
+        "IPL Auction",
+        "Paper presentation",
+        "No Code Automation",
+        "Memerush",
+        "Ad-Zap"
+      ],
+      workshops: [
+        "MCT Workshop"
+      ],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "mech",
+      title: "MECH",
+      events: [
+        "Lathe Master (Tool Finder)",
+        "NexGen Tech Quiz",
+        "Public Speaking",
+        "Tool finder",
+        "Connections",
+        "TECH TALKS (Paper)",
+        "Mechanical QUIZ",
+        "Screensmith (CAD Modeling)",
+        "Mechamind"
+      ],
+      workshops: [
+        "MECH Workshop"
+      ],
+      contact: "Student Coordinator: +91 00000 00000"
+    },
+    {
+      id: "mmct",
+      title: "MMCT",
+      events: [
+        "CAD Design Challenge",
+        "AM Ideathon",
+        "Innoventure",
+        "Esports",
+        "Paper presentation",
+        "Best Manager",
+        "Ted X",
+        "RC Car Race",
+        "Junk wars"
+      ],
+      workshops: [],
+      contact: "Student Coordinator: +91 00000 00000"
+    }
+  ];
+
   return (
-    <div className="bg-background-light min-h-screen">
-      <header className="relative pt-16 pb-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-          <p className="font-script text-5xl text-primary mb-2">Non-CS Domain</p>
-          <h1 className="font-accent text-7xl md:text-9xl tracking-tight leading-none mb-6 text-slate-900">
-            INNOVATE <span className="text-primary">&amp;</span> BEYOND
+    <div className="min-h-screen bg-white font-space relative overflow-x-hidden">
+      <style dangerouslySetInnerHTML={{
+        __html: `
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap');
+        
+        .cyber-grid {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .event-item {
+            @apply flex flex-col justify-center transition-colors cursor-default;
+            padding: 10px 45px;
+        }
+        .workshop-item {
+            @apply flex flex-col justify-center transition-colors cursor-default;
+            padding: 5px 45px;
+        }
+        .bg-text {
+            position: fixed;
+            font-size: 25vw;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.02);
+            white-space: nowrap;
+            letter-spacing: -0.05em;
+            pointer-events: none;
+            z-index: 0;
+            user-select: none;
+        }
+      `}} />
+
+      {/* Background Decorative Elements */}
+      <div className="bg-text top-1/4 -left-20">ENGINEERING</div>
+      <div className="bg-text top-3/4 -right-40">INNOVATION</div>
+
+      {/* Header Content */}
+      <header className="relative pt-48 pb-24 px-6 cyber-grid overflow-hidden z-10">
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <div className="inline-block px-6 py-2 mb-8 bg-black text-[#FFC107] font-black text-[10px] md:text-xs uppercase tracking-[0.4em]">
+            Domain Matrix
+          </div>
+          <h1 className="text-5xl md:text-9xl font-black mb-8 uppercase leading-tight text-black tracking-tighter">
+            NON-CS <br />
+            <span className="text-[#FFC107] italic">DOMAINS</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-gray-600 text-lg md:text-xl font-medium">
-            Exploring the realms of engineering, design, and culture. Where tradition meets future-tech innovation.
+          <p className="max-w-3xl mx-auto text-slate-400 text-lg md:text-xl font-medium leading-relaxed italic">
+            "Engineering Excellence Beyond Boundaries"
           </p>
-        </div>
-        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 font-accent text-[20vw] opacity-5 whitespace-nowrap pointer-events-none select-none">
-          ENGINEERING
         </div>
       </header>
 
-      <section className="relative bg-primary text-secondary py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-            <div>
-              <h2 className="font-accent text-6xl md:text-7xl mb-2">FEATURED EVENTS</h2>
-              <p className="font-semibold uppercase tracking-widest text-secondary/70">Multidisciplinary Excellence</p>
-            </div>
-            <div className="flex gap-4">
-              <Badge value="10+" label="Workshops Scheduled" dark />
-              <Badge value="20+" label="Technical Challenges" />
-            </div>
-          </div>
+      {/* Main Content Matrix Grid */}
+      <main className="max-w-[1750px] mx-auto px-6 py-24 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10 items-stretch">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {NON_CS_EVENTS.map(event => (
-              <div key={event.id} className="group bg-white rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full border border-black/5">
-                <div className="aspect-video relative overflow-hidden bg-zinc-100">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="material-icons text-7xl text-primary opacity-30 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500">
-                      {event.icon}
-                    </span>
-                  </div>
-                  {event.category && (
-                    <div className="absolute top-6 left-6 bg-primary text-secondary font-black px-4 py-1.5 rounded-full text-[10px] uppercase tracking-wider">
-                      {event.category}
+          {sections.map((dept) => (
+            <div key={dept.id} className="group flex flex-col gap-6" id={dept.id}>
+              {/* Department Header */}
+              <div className="bg-[#FFC107] border-[3px] border-black rounded-[1.5rem] py-5 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:-translate-y-1 transition-all">
+                <h2 className="text-2xl font-black uppercase tracking-tighter text-center italic">{dept.title}</h2>
+              </div>
+
+              {/* Column Container - Plain White List - Hidden by default, reveals on hover */}
+              <div className="bg-white border-[3px] border-black rounded-[3.5rem] flex flex-col overflow-hidden shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] h-full opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 origin-top pointer-events-none group-hover:pointer-events-auto">
+
+                <div className="p-8 flex items-center">
+                  <span className="text-[14px] font-black uppercase tracking-[0.4em] text-black italic">Events List</span>
+                </div>
+
+                <div className="flex flex-col pb-8">
+                  {dept.events.map((event, idx) => (
+                    <div key={idx} className="event-item">
+                      <h3 className="font-space font-black text-[20px] uppercase leading-none tracking-tight text-black text-center">
+                        {event}
+                      </h3>
                     </div>
-                  )}
+                  ))}
                 </div>
-                <div className="p-10 flex flex-col flex-grow">
-                  <h3 className="font-accent text-4xl mb-4 text-slate-900 leading-none">{event.title}</h3>
-                  <div className="opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 origin-top pointer-events-none group-hover:pointer-events-auto">
-                    <p className="text-gray-600 text-base mb-8 flex-grow">
-                      {event.description}
-                    </p>
-                    <span className="font-accent text-2xl text-slate-900">
-                      {event.prizePool} <span className="text-xs font-montserrat font-bold text-gray-500 uppercase ml-1">Prizes</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
 
-          <div className="mt-24 flex flex-col md:flex-row items-center justify-between gap-10 p-12 bg-secondary text-white rounded-[4rem] shadow-2xl relative overflow-hidden group">
-            <div className="flex items-center gap-10 relative z-10">
-              <div className="bg-white p-5 rounded-3xl rotate-3 group-hover:rotate-0 transition-transform shadow-xl">
-                <img
-                  alt="Registration QR Code"
-                  className="w-24 h-24"
-                  src="https://picsum.photos/200/200?random=qr"
-                />
+                {/* Workshops Section */}
+                {dept.workshops.length > 0 && (
+                  <>
+                    <div className="p-8 border-t-2 border-black/10 flex items-center">
+                      <span className="text-[14px] font-black uppercase tracking-[0.4em] text-black italic">Workshops</span>
+                    </div>
+                    <div className="flex flex-col pb-8">
+                      {dept.workshops.map((ws, idx) => (
+                        <div key={idx} className="workshop-item">
+                          <div className="flex flex-col gap-2">
+                            <h3 className="font-space font-black text-[20px] uppercase leading-none tracking-tight text-black text-center">
+                              {ws}
+                            </h3>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {/* Contact Section */}
+                <div className="mt-auto px-8 pt-4 pb-2 border-t-2 border-dashed border-black/10">
+                  <p className="text-[11px] font-black uppercase tracking-wider text-black/60 text-center italic">
+                    {dept.contact}
+                  </p>
+                </div>
+
               </div>
-              <div>
-                <h4 className="font-accent text-4xl text-primary mb-2">SCAN TO REGISTER</h4>
-                <p className="text-sm text-gray-400 max-w-xs leading-relaxed">
-                  Quick registration for all events. Early bird discounts available for team entries.
-                </p>
-              </div>
             </div>
-            <div className="text-center md:text-right relative z-10">
-              <p className="font-accent text-5xl leading-none opacity-50">PRIZE POOL UP TO</p>
-              <p className="font-accent text-8xl text-primary leading-none tracking-tighter">10 LAKHS</p>
-            </div>
-            <div className="absolute right-0 bottom-0 text-[20rem] font-accent text-white opacity-5 select-none pointer-events-none -mb-20 -mr-10">
-              WIN
-            </div>
-          </div>
+          ))}
+
         </div>
 
-        {/* Global Registration Button Section */}
-        <div className="mt-32 flex justify-center pb-12">
-          <button className="group relative w-full sm:w-auto px-16 py-6 bg-white hover:bg-primary border-[4px] border-black rounded-[22px_42px_18px_38px] flex items-center justify-center gap-8 transition-all hover:-translate-y-2 hover:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-xl">
+        {/* Footer Registration Button */}
+        <div className="mt-32 flex justify-center pb-20">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfg3ZGc5LYJTOYtIhRnlj4Ph87Zca2GM93KxevmRafCjUrwew/viewform?usp=sharing&ouid=114073418047323783317"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative w-full sm:w-auto px-16 py-6 bg-white hover:bg-[#FFC107] border-[4px] border-black rounded-[22px_42px_18px_38px] flex items-center justify-center gap-8 transition-all hover:-translate-y-2 hover:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-xl"
+          >
             <span className="text-3xl md:text-4xl font-black text-black tracking-tight italic uppercase">Register Now</span>
             <span className="material-symbols-outlined text-5xl text-black group-hover:translate-x-3 transition-transform duration-300 font-bold">arrow_forward</span>
-          </button>
+          </a>
         </div>
-      </section>
-
-      <section className="py-32 bg-background-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div>
-              <h2 className="font-accent text-7xl mb-12 text-slate-900 leading-none">GET IN <br /><span className="text-primary">TOUCH</span></h2>
-              <div className="space-y-10">
-                <ContactItem icon="call" label="Hotline" value="75503 16701 / 08" />
-                <ContactItem icon="location_on" label="Venue" value="SNSCT, Coimbatore, TN" />
-                <ContactItem icon="public" label="Website" value="www.snsgroups.com" isLink />
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-6">
-              <InfoSquare icon="groups" value="5000+" label="Expected Footfall" />
-              <InfoSquare icon="emoji_events" value="100+" label="Awards to win" primary />
-            </div>
-          </div>
-        </div>
-      </section>
+      </main>
     </div>
   );
 };
-
-const Badge = ({ value, label, dark = false }: any) => (
-  <div className={`${dark ? 'bg-secondary text-white' : 'bg-white/30 backdrop-blur-md border border-secondary/10'} px-8 py-5 rounded-2xl flex items-center gap-5 shadow-xl`}>
-    <div className="text-5xl font-black font-display leading-none">{value}</div>
-    <div className="text-[10px] uppercase font-bold leading-tight tracking-widest">{label.split(' ')[0]}<br />{label.split(' ')[1]}</div>
-  </div>
-);
-
-const ContactItem = ({ icon, label, value, isLink = false }: any) => (
-  <div className="flex items-center gap-6 group">
-    <div className="w-16 h-16 rounded-3xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors duration-500">
-      <span className="material-icons text-primary text-3xl group-hover:text-black transition-colors">{icon}</span>
-    </div>
-    <div>
-      <p className="text-[10px] uppercase font-black text-gray-400 tracking-[0.3em] mb-1">{label}</p>
-      {isLink ? (
-        <a href="#" className="font-display font-bold text-2xl text-slate-800 hover:text-primary transition-colors underline decoration-primary decoration-2 underline-offset-4">{value}</a>
-      ) : (
-        <p className="font-display font-bold text-2xl text-slate-800">{value}</p>
-      )}
-    </div>
-  </div>
-);
-
-const InfoSquare = ({ icon, value, label, primary = false }: any) => (
-  <div className={`aspect-square ${primary ? 'bg-primary text-secondary' : 'bg-white text-secondary'} rounded-[3rem] border border-gray-100 p-10 flex flex-col justify-between shadow-2xl transition-transform hover:scale-105 duration-500`}>
-    <span className={`material-icons text-5xl ${primary ? 'text-secondary' : 'text-primary'}`}>{icon}</span>
-    <div>
-      <p className="text-5xl font-black mb-1 leading-none tracking-tighter">{value}</p>
-      <p className="text-[10px] uppercase font-bold opacity-60 tracking-[0.2em]">{label}</p>
-    </div>
-  </div>
-);
 
 export default NonCSDomain;
