@@ -210,7 +210,7 @@ const ComputerScienceEvents: React.FC = () => {
                 {/* Footer Registration Button */}
                 <div className="mt-32 flex justify-center pb-20">
                     <a
-                        href="https://forms.gle/A3Rzst5WsxsDeEfY9"
+                        href="https://forms.gle/vtsvVeHm5MQqwnXz5"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group relative w-full sm:w-auto px-16 py-6 bg-white hover:bg-[#FFC107] border-[4px] border-black rounded-[22px_42px_18px_38px] flex items-center justify-center gap-8 transition-all hover:-translate-y-2 hover:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-xl"
