@@ -156,7 +156,7 @@ const ComputerScienceEvents: React.FC = () => {
                 "ThreatX(Workshop-Cyber Security)",
                 "Gamestrom(Workshop on Game Design)"
             ],
-            contact: "Student Coordinators: Monika (7305792365), Koshika . T (6380237897)"
+            contact: "Student Coordinators: Mohamed Umar R (8807664706), Koshika . T (6380237897)"
         }
     ];
 
