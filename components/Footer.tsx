@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-space font-black text-xl mb-6 tracking-tight uppercase italic">CONTACT US</h4>
             <ul className="space-y-4">
-              <ContactLink icon="phone" text="75503 16701" />
-              <ContactLink icon="phone" text="75503 16708" />
+              <ContactLink icon="phone" text="7358981203" />
+              <ContactLink icon="phone" text="7603923049" />
             </ul>
           </div>
           <div>
