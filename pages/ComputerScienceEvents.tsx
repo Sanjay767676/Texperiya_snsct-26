@@ -72,6 +72,7 @@ const ComputerScienceEvents: React.FC = () => {
             title: "CSE",
             events: [
                 "Idea Pitching",
+                "Paper Presentation",
                 "Capture the Flag",
                 "Appathon",
                 "Mastermind -Quiz",

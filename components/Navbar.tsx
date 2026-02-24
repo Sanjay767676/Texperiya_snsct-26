@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const isHome = location.pathname === '/';
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 min-h-[140px] md:min-h-[180px] flex items-center shadow-sm py-4">
+    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 min-h-[80px] md:min-h-[140px] flex items-center shadow-sm py-2 md:py-4">
       <div className="max-w-[1600px] mx-auto px-2 sm:px-6 lg:px-8 w-full">
         {/* Desktop Grid Layout: 3 equal-width columns for absolute centering */}
         <div className="hidden md:grid grid-cols-3 items-center w-full relative">
@@ -37,25 +37,14 @@ const Navbar: React.FC = () => {
           {/* Center: Institutional Details */}
           <div className="flex flex-col items-center text-center px-4">
             <h1
-              className="text-lg sm:text-lg md:text-xl lg:text-3xl font-bold text-slate-900 leading-tight uppercase tracking-wide whitespace-nowrap"
+              className="text-xl lg:text-3xl font-bold text-slate-900 leading-tight uppercase tracking-wide whitespace-nowrap"
               style={{ fontFamily: '"Times New Roman", Times, serif' }}
             >
               SNS COLLEGE OF TECHNOLOGY
             </h1>
-            <p className="text-sm font-semibold text-slate-700">
+            <p className="text-sm font-semibold text-slate-700 mt-1">
               (An Autonomous Institution)
             </p>
-            <div className="mt-2 space-y-0.5">
-              <p className="text-[10px] lg:text-[11px] text-slate-600 font-medium">
-                Approved by AICTE recognized by UGC & Affiliated to Anna University, Chennai
-              </p>
-              <p className="text-[10px] lg:text-[11px] text-slate-600 font-medium">
-                Accredited by NBA-AICTE, NAAC-UGC With A++ Grade
-              </p>
-              <p className="text-[10px] lg:text-[11px] text-slate-600 font-medium">
-                Sathy Main Road, Saravanampatti (PO), Coimbatore-641 035
-              </p>
-            </div>
           </div>
 
           {/* Right Side: SNS Institutions Branding Banner */}
@@ -70,50 +59,41 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Flex Layout: Stacked and Centered */}
-        <div className="flex md:hidden flex-col items-center gap-4 w-full">
-          {/* Top: College Details */}
-          <div className="text-center px-2">
-            <h1
-              className="text-[14px] xs:text-base font-bold text-slate-900 leading-tight uppercase tracking-wide whitespace-nowrap"
-              style={{ fontFamily: '"Times New Roman", Times, serif' }}
-            >
-              SNS COLLEGE OF TECHNOLOGY
-            </h1>
-            <p className="text-[10px] font-semibold text-slate-700">(An Autonomous Institution)</p>
-          </div>
-
-          {/* Middle: Logos Row */}
-          <div className="flex justify-between items-center w-full px-4 gap-2">
-            <div className="h-14 w-auto flex items-center">
+        {/* Mobile Flex Layout: Logo | Text | Logo Row */}
+        <div className="flex md:hidden flex-col items-center gap-1 w-full px-2">
+          {/* Main Row: Logo - Text - Logo */}
+          <div className="grid grid-cols-[70px_1fr_70px] xs:grid-cols-[90px_1fr_90px] items-center w-full gap-2">
+            {/* Left Logo */}
+            <div className="h-16 xs:h-20 w-full flex items-center justify-start">
               <img src={logo2} alt="Logo 1" className="h-full w-auto object-contain" />
             </div>
 
-            <div className="h-10 w-auto flex items-center">
+            {/* Center Text */}
+            <div className="text-center overflow-hidden">
+              <h1
+                className="text-[12px] xs:text-[14px] font-bold text-slate-900 leading-tight uppercase tracking-tight whitespace-nowrap"
+                style={{ fontFamily: '"Times New Roman", Times, serif' }}
+              >
+                SNS COLLEGE OF TECHNOLOGY
+              </h1>
+              <p className="text-[8px] xs:text-[10px] font-semibold text-slate-700 mt-0.5 leading-none">
+                (An Autonomous Institution)
+              </p>
+            </div>
+
+            {/* Right Logo */}
+            <div className="h-16 xs:h-20 w-full flex items-center justify-end">
               <img src={brandingImg} alt="Logo 2" className="h-full w-auto object-contain" />
             </div>
-          </div>
-
-          {/* Bottom: Address Details */}
-          <div className="text-center space-y-0.5 px-2">
-            <p className="text-[8px] text-slate-600 font-medium italic">
-              Approved by AICTE recognized by UGC & Affiliated to Anna University, Chennai
-            </p>
-            <p className="text-[8px] text-slate-600 font-medium">
-              Accredited by NBA-AICTE, NAAC-UGC With A++ Grade
-            </p>
-            <p className="text-[8px] text-slate-600 font-medium">
-              Sathy Main Road, Saravanampatti (PO), Coimbatore-641 035
-            </p>
           </div>
 
           {/* Back Button for Mobile */}
           {!isHome && (
             <button
-              className="flex items-center text-[10px] font-black text-slate-800 uppercase tracking-widest"
+              className="mt-1 flex items-center text-[10px] font-black text-slate-800 uppercase tracking-widest hover:text-primary transition-colors"
               onClick={() => navigate('/')}
             >
-              <span className="material-icons text-lg mr-1">arrow_back</span>
+              <span className="material-icons text-base mr-1">arrow_back</span>
               Home
             </button>
           )}
