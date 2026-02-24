@@ -110,7 +110,6 @@ const ComputerScienceEvents: React.FC = () => {
             id: "it",
             title: "IT",
             events: [
-                "Memathon 3.0",
                 "Technical Quiz \"Small questions.Big brains\"",
                 "Hunt the code “Find it. Fix it. Finish it.”",
                 "Emoji Story Challenge",
