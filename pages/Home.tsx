@@ -190,7 +190,7 @@ const Home: React.FC = () => {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ type: "spring", damping: 15, delay: 0.6 }}
-              className="w-full max-w-[400px] sm:max-w-lg md:max-w-5xl lg:max-w-6xl mx-auto mb-10 px-4 transform hover:scale-[1.02] transition-transform duration-500"
+              className="w-full max-w-[500px] sm:max-w-2xl md:max-w-7xl lg:max-w-[1400px] mx-auto mb-10 px-4 transform hover:scale-[1.02] transition-transform duration-500"
             >
               <img
                 src={image1}
