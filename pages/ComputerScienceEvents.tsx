@@ -12,7 +12,7 @@ const ComputerScienceEvents: React.FC = () => {
     const eventData: Record<string, { type: 'technical' | 'non-technical', description: string }> = {
         // CSE
         "Idea Pitching": { type: 'technical', description: "Pitch your revolutionary startup or product idea to industry experts." },
-        "Paper Presentation": { type: 'technical', description: "Present your research findings in a Emerging Technologies In India in every sector." },
+        "Paper Presentation": { type: 'technical', description: "Present your research findings on Emerging Technologies across various sectors." },
         "Capture the Flag": { type: 'technical', description: "Cybersecurity challenge to find and exploit hidden vulnerabilities." },
         "Appathon": { type: 'technical', description: "Develop and showcase innovative mobile or web applications." },
         "Mastermind -Quiz": { type: 'technical', description: "Test your technical foundation and general tech awareness." },

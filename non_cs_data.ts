@@ -10,7 +10,7 @@ export const NON_CS_DEPARTMENTS = [
             "Mach Hunt",
             "SkySketch 3D",
             "AeroGenesis Expo",
-            "Idea to Impact (Ideathon)"
+            "Idea to Impact(Ideathon)"
         ],
         workshops: [
             "Workshop on 3D Printing"
@@ -26,7 +26,7 @@ export const NON_CS_DEPARTMENTS = [
             "Farm Gear Flash"
         ],
         workshops: [
-            "Plough to Processor: Robotics"
+            "Workshop on Plough to Processor: Robotics in Modern Agri"
         ]
     },
     {
@@ -46,10 +46,10 @@ export const NON_CS_DEPARTMENTS = [
         id: "bme",
         title: "BME",
         events: [
-            "Bionexus (Poster)",
+            "Bionexus (Poster Presentation)",
             "BioGenesis (Ideathon)",
             "Blind Fold",
-            "Medxplore (Paper)",
+            "Medxplore (Paper Presentation)",
             "Biofluxtron",
             "Once upon a Mic",
             "Movie Scene Recreation"
@@ -77,6 +77,7 @@ export const NON_CS_DEPARTMENTS = [
         id: "ece",
         title: "ECE",
         events: [
+            "Tech Showcase (Project Expo)",
             "Innovatrix (Hackathon)",
             "Electroforge",
             "Solo and Group dance",
@@ -84,7 +85,8 @@ export const NON_CS_DEPARTMENTS = [
             "App Pitching",
             "SparkX (Paper Presentation)",
             "IPL Team Builder Auction",
-            "Electroverse"
+            "Electroverse",
+            "E-Sports"
         ],
         workshops: []
     },
@@ -92,22 +94,23 @@ export const NON_CS_DEPARTMENTS = [
         id: "eee",
         title: "EEE",
         events: [
-            "E-Sports",
             "Short film",
             "Gaming",
             "Protothon",
             "Quad Killer Quest",
             "Reel Creation",
             "Paper Presentation",
-            "Build it in 60"
+            "Build it in 60",
+            "Reverse Debate"
         ],
-        workshops: []
+        workshops: [
+            "Workshop"
+        ]
     },
     {
         id: "ft",
         title: "FT",
         events: [
-            "Reverse Debate",
             "Paper Presenation",
             "Flameless Cooking",
             "Treasure Hunt",
@@ -115,7 +118,8 @@ export const NON_CS_DEPARTMENTS = [
             "Dark Kitchen Detectives",
             "Short film",
             "Fruit and Vegetable Carving",
-            "Ideafest"
+            "Ideafest",
+            "Technical Quiz"
         ],
         workshops: [
             "Technical Workshop"
@@ -125,7 +129,6 @@ export const NON_CS_DEPARTMENTS = [
         id: "mct",
         title: "MCT",
         events: [
-            "Technical Quiz",
             "Line Follower",
             "Start Up Presentation",
             "IPL Auction",
@@ -135,22 +138,23 @@ export const NON_CS_DEPARTMENTS = [
             "Ad-Zap"
         ],
         workshops: [
-            "MCT Workshop"
+            "Workshop"
         ]
     },
     {
         id: "mech",
         title: "MECH",
         events: [
-            "Lathe Master (Tool Finder)",
-            "NexGen Tech Quiz",
+            "Lathe Master(Tool Finder)",
+            "NexGen Tech Quiz(Technical Quiz )",
             "Public Speaking",
             "Tool finder",
+            "Workshop",
             "Connections",
-            "TECH TALKS (Paper)",
+            "TECH TALKS - Paper Presentation",
             "Mechanical QUIZ",
             "Screensmith (CAD Modeling)",
-            "Mechamind"
+            "Mechamind(Technical Event)"
         ],
         workshops: [
             "MECH Workshop"

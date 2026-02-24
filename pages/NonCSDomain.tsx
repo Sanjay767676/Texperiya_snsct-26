@@ -18,7 +18,7 @@ const NonCSDomain: React.FC = () => {
     "Mach Hunt": { type: 'non-technical', description: "A high-speed scavenger hunt through aeronautical challenges." },
     "SkySketch 3D": { type: 'technical', description: "3D CAD modeling competition for advanced aerospace components." },
     "AeroGenesis Expo": { type: 'technical', description: "Showcase your aeronautical projects to a panel of expert judges." },
-    "Idea to Impact (Ideathon)": { type: 'technical', description: "Pitch solutions for current challenges in the aviation industry." },
+    "Idea to Impact(Ideathon)": { type: 'technical', description: "Pitch solutions for current challenges in the aviation industry." },
 
     // AGRI
     "Plough Your Brain - Quiz Quest": { type: 'technical', description: "Test your skills in modern agricultural sciences and tech." },
@@ -32,10 +32,10 @@ const NonCSDomain: React.FC = () => {
     "Slow Bike Race": { type: 'non-technical', description: "Test your balance and control in the slowest race to the finish." },
 
     // BME
-    "Bionexus (Poster)": { type: 'technical', description: "Visual storytelling of biomedical engineering concepts." },
+    "Bionexus (Poster Presentation)": { type: 'technical', description: "Visual storytelling of biomedical engineering concepts via poster designs." },
     "BioGenesis (Ideathon)": { type: 'technical', description: "Engineer innovative solutions for modern medical challenges." },
     "Blind Fold": { type: 'non-technical', description: "Navigate challenges while testing your senses and trust." },
-    "Medxplore (Paper)": { type: 'technical', description: "Academic presentation of biomedical research and breakthroughs." },
+    "Medxplore (Paper Presentation)": { type: 'technical', description: "Academic presentation of biomedical research and breakthroughs." },
     "Biofluxtron": { type: 'technical', description: "Challenge focused on biological signals and electronics." },
     "Once upon a Mic": { type: 'non-technical', description: "Creative storytelling and vocal performance platform." },
     "Movie Scene Recreation": { type: 'non-technical', description: "Act out and recreate classic moments from your favorite films." },
@@ -59,15 +59,17 @@ const NonCSDomain: React.FC = () => {
     "SparkX (Paper Presentation)": { type: 'technical', description: "Presenting future-ready research in electronics and comms." },
     "IPL Team Builder Auction": { type: 'non-technical', description: "Strategic bidding and team management simulation." },
     "Electroverse": { type: 'technical', description: "Multi-round competition on the latest trends in electronics." },
+    "E-Sports": { type: 'non-technical', description: "Competitive gaming tournament for digital sports fans." },
+    "Tech Showcase (Project Expo)": { type: 'technical', description: "Detailed exhibition of electronics engineering projects and posters." },
 
     // EEE
-    "E-Sports": { type: 'non-technical', description: "Competitive gaming tournament for digital sports fans." },
     "Short film": { type: 'non-technical', description: "Showcase your cinematic vision in our short film festival." },
     "Gaming": { type: 'non-technical', description: "Casual and competitive gaming for all skill levels." },
     "Protothon": { type: 'technical', description: "Build working electrical prototypes in a limited timeframe." },
     "Quad Killer Quest": { type: 'technical', description: "Drone navigating and obstacle course challenge." },
     "Reel Creation": { type: 'non-technical', description: "Create viral-worthy short video content for social media." },
     "Build it in 60": { type: 'technical', description: "Construct small-scale electrical systems in just 60 seconds." },
+    "Workshop": { type: 'technical', description: "Hands-on training session for practical domain skills." },
 
     // FT
     "Reverse Debate": { type: 'non-technical', description: "Argue for the opposite side in this unique food tech debate." },
@@ -88,15 +90,15 @@ const NonCSDomain: React.FC = () => {
     "Ad-Zap": { type: 'non-technical', description: "Fast-paced mock advertisement performance challenge." },
 
     // MECH
-    "Lathe Master (Tool Finder)": { type: 'technical', description: "Precision identification and operation of machining tools." },
-    "NexGen Tech Quiz": { type: 'technical', description: "Competitive quiz on advanced materials and manufacturing." },
+    "Lathe Master(Tool Finder)": { type: 'technical', description: "Precision identification and operation of machining tools." },
+    "NexGen Tech Quiz(Technical Quiz )": { type: 'technical', description: "Competitive quiz on advanced materials and manufacturing." },
     "Public Speaking": { type: 'non-technical', description: "Oratory contest on technical and social topics." },
     "Tool finder": { type: 'technical', description: "Identify specific mechanical parts and tools under pressure." },
     "Connections": { type: 'non-technical', description: "Connect visual icons to find the mechanical concept." },
-    "TECH TALKS (Paper)": { type: 'technical', description: "Inspiring presentations on core mechanical engineering." },
+    "TECH TALKS - Paper Presentation": { type: 'technical', description: "Inspiring presentations on core mechanical engineering." },
     "Mechanical QUIZ": { type: 'technical', description: "Test your fundamental and applied mechanical concepts." },
     "Screensmith (CAD Modeling)": { type: 'technical', description: "2D and 3D drafting challenge using industry standard CAD." },
-    "Mechamind": { type: 'technical', description: "Problem solving challenge for complex mechanical systems." },
+    "Mechamind(Technical Event)": { type: 'technical', description: "Problem solving challenge for complex mechanical systems." },
 
     // MMCT
     "CAD Design Challenge": { type: 'technical', description: "Create intricate digital designs for additive manufacturing." },
