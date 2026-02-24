@@ -56,9 +56,9 @@ const ComputerScienceEvents: React.FC = () => {
 
         // CST/CSD/IoT
         "Paper Presentation (Hardware & Software)": { type: 'technical', description: "Innovate and present your research or technical ideas." },
-        "e Sportz": { type: 'non-technical', description: "Competitive gaming tournament for esports enthusiasts." },
-        "Adversarial AI Security Engg": { type: 'technical', description: "Deep dive into network defense, ethical hacking and AI security." },
-        "Strongest Crowd Puller": { type: 'non-technical', description: "Demonstrate your leadership and engagement skills." },
+        "Stranger Things": { type: 'non-technical', description: "Competitive gaming tournament for esports enthusiasts." },
+        "Turing Heist": { type: 'technical', description: "An Intense AI Challenge To Secure LLMs using Prompt" },
+        "RunTime Rumble": { type: 'non-technical', description: "Fix.Flip.Fly - No web,Just Wit" },
         "Connection - (Tech Quiz)": { type: 'technical', description: "Relate visual clues to find the common technical term or idea." },
         "Short Film": { type: 'non-technical', description: "Direct and produce a compelling story in the short film contest." },
         "Prompt designing": { type: 'technical', description: "The art of generating precise and creative AI outputs with prompts." },
@@ -144,9 +144,9 @@ const ComputerScienceEvents: React.FC = () => {
             title: "CST/CSD/IoT Domain",
             events: [
                 "Paper Presentation (Hardware & Software)",
-                "e Sportz",
-                "Adversarial AI Security Engg",
-                "Strongest Crowd Puller",
+                "Stranger Things",
+                "Turing Heist",
+                "RunTime Rumble",
                 "Connection - (Tech Quiz)",
                 "Short Film",
                 "Prompt designing",
