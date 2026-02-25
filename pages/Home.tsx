@@ -180,17 +180,17 @@ const Home: React.FC = () => {
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="inline-block bg-primary px-4 py-1 mb-6 rounded shadow-sm relative overflow-hidden group"
+              className="inline-block bg-primary px-4 py-1 2xl:px-8 2xl:py-3 mb-6 2xl:mb-12 rounded shadow-sm relative overflow-hidden group"
             >
               <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-              <span className="text-black font-dirtyline tracking-[0.2em] uppercase text-xs relative z-10">National Level Symposium</span>
+              <span className="text-black font-dirtyline tracking-[0.2em] uppercase text-xs 2xl:text-2xl relative z-10">National Level Symposium</span>
             </motion.div>
 
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ type: "spring", damping: 15, delay: 0.6 }}
-              className="w-full max-w-[500px] sm:max-w-2xl md:max-w-7xl lg:max-w-[1400px] mx-auto mb-10 px-4 transform hover:scale-[1.02] transition-transform duration-500"
+              className="w-full max-w-[500px] sm:max-w-2xl md:max-w-7xl lg:max-w-[1400px] 2xl:max-w-[1800px] mx-auto mb-10 2xl:mb-24 px-4 transform hover:scale-[1.02] transition-transform duration-500"
             >
               <img
                 src={image1}
@@ -203,11 +203,12 @@ const Home: React.FC = () => {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.8 }}
+              className="2xl:scale-150 2xl:mb-32"
             >
               <CountdownTimer />
             </motion.div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 w-full max-w-2xl mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 2xl:gap-16 w-full max-w-2xl 2xl:max-w-7xl mb-16 2xl:mb-32">
               <motion.div
                 initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -228,24 +229,24 @@ const Home: React.FC = () => {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="relative w-full max-w-4xl group"
+              className="relative w-full max-w-4xl 2xl:max-w-7xl group"
             >
-              <div className="bg-black text-white p-6 md:p-12 rounded-[2rem] flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 shadow-2xl relative z-10 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
-                <div className="corner-bracket bracket-tl border-white"></div>
-                <div className="corner-bracket bracket-tr border-white"></div>
-                <div className="corner-bracket bracket-bl border-white"></div>
-                <div className="corner-bracket bracket-br border-white"></div>
+              <div className="bg-black text-white p-6 md:p-12 2xl:p-24 rounded-[2rem] 2xl:rounded-[4rem] flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 2xl:gap-24 shadow-2xl relative z-10 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                <div className="corner-bracket bracket-tl border-white 2xl:border-[4px] 2xl:w-20 2xl:h-20"></div>
+                <div className="corner-bracket bracket-tr border-white 2xl:border-[4px] 2xl:w-20 2xl:h-20"></div>
+                <div className="corner-bracket bracket-bl border-white 2xl:border-[4px] 2xl:w-20 2xl:h-20"></div>
+                <div className="corner-bracket bracket-br border-white 2xl:border-[4px] 2xl:w-20 2xl:h-20"></div>
                 <div className="text-center md:text-left">
-                  <h2 className="text-3xl md:text-5xl font-space font-black leading-none uppercase">PRIZE <br className="hidden md:block" /> POOL</h2>
+                  <h2 className="text-3xl md:text-5xl 2xl:text-8xl font-space font-black leading-none uppercase">PRIZE <br className="hidden md:block" /> POOL</h2>
                 </div>
-                <div className="h-1 w-20 md:h-20 md:w-1 bg-primary"></div>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-primary font-space text-6xl sm:text-8xl md:text-[8rem] font-black leading-none">10</span>
-                  <span className="text-white font-space text-2xl sm:text-4xl md:text-6xl font-bold uppercase italic">Lakhs</span>
+                <div className="h-1 w-20 md:h-20 md:w-1 2xl:h-40 2xl:w-2 bg-primary"></div>
+                <div className="flex items-baseline gap-2 2xl:gap-6">
+                  <span className="text-primary font-space text-6xl sm:text-8xl md:text-[8rem] 2xl:text-[18rem] font-black leading-none">10</span>
+                  <span className="text-white font-space text-2xl sm:text-4xl md:text-6xl 2xl:text-9xl font-bold uppercase italic">Lakhs</span>
                 </div>
-                <div className="absolute top-4 right-6 text-[8px] font-mono text-white/20 uppercase tracking-widest hidden md:block">MTX-AWARD-PRCL.v3</div>
+                <div className="absolute top-4 right-6 text-[8px] 2xl:text-[16px] font-mono text-white/20 uppercase tracking-widest hidden md:block">MTX-AWARD-PRCL.v3</div>
               </div>
-              <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3 rounded-[2rem] -z-10 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+              <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3 rounded-[2rem] 2xl:rounded-[4rem] -z-10 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
             </motion.div>
           </div>
         </div>

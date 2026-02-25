@@ -431,7 +431,7 @@ const NonCSDomain: React.FC = () => {
           <div className="inline-block px-6 py-2 mb-8 bg-black text-[#FFC107] font-black text-[10px] md:text-xs uppercase tracking-[0.4em]">
             Domain Matrix
           </div>
-          <h1 ref={headerRef} className="text-5xl md:text-9xl font-black mb-8 uppercase leading-tight text-black tracking-tighter">
+          <h1 ref={headerRef} className="text-5xl md:text-9xl 2xl:text-[12rem] font-black mb-8 uppercase leading-tight text-black tracking-tighter">
             NON-COMPUTER <br />
             <span className="text-[#FFC107] italic">SCIENCE</span>
           </h1>
@@ -441,8 +441,8 @@ const NonCSDomain: React.FC = () => {
         </div>
       </header>
 
-      <main className="max-w-[1750px] mx-auto px-6 py-24 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-5 gap-10 items-stretch">
+      <main className="max-w-[1750px] 2xl:max-w-[2200px] mx-auto px-6 py-24 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 gap-10 2xl:gap-14 items-stretch">
           {sections.map((dept, idx) => (
             <motion.div
               key={dept.id}
@@ -453,8 +453,8 @@ const NonCSDomain: React.FC = () => {
               transition={{ duration: 0.6, delay: idx * 0.05 }}
               className="group flex flex-col gap-6"
             >
-              <div className="bg-[#FFC107] border-[3px] border-black rounded-[1.5rem] py-5 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:-translate-y-1 transition-all">
-                <h2 className="text-2xl font-black uppercase tracking-tighter text-center italic">{dept.title}</h2>
+              <div className="bg-[#FFC107] border-[3px] border-black rounded-[1.5rem] py-5 2xl:py-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:-translate-y-1 transition-all">
+                <h2 className="text-2xl 2xl:text-5xl font-black uppercase tracking-tighter text-center italic">{dept.title}</h2>
               </div>
 
               {/* Column Container - Plain White List - Hidden by default, reveals on hover */}
