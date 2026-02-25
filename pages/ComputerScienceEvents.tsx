@@ -18,7 +18,7 @@ const ComputerScienceEvents: React.FC = () => {
         "Mastermind -Quiz": { type: 'technical', description: "Test your technical foundation and general tech awareness." },
         "AIXperience Design Challenge": { type: 'technical', description: "Craft intuitive and visually stunning user interfaces for AI-driven apps." },
         "AI Prompt": { type: 'technical', description: "The art of generating precise and creative AI outputs with prompts." },
-        "Battle of Minds": { type: 'technical', description: "Intense technical debate and problem-solving competition." },
+        "Battle of Minds": { type: 'technical', description: "A Chess Tournament showcasing strategy, skill, and sportmanship" },
         "Leet Code Challenge": { type: 'technical', description: "Competitive programming to solve complex algorithmic problems." },
         "Multimedia Presentation (Neuroscope:Visual Exposure to AI)": { type: 'technical', description: "Visual storytelling combining advanced graphics and AI insights." },
         "Treasure Hunt": { type: 'non-technical', description: "Follow technical clues and markers to win the final grand prize." },
