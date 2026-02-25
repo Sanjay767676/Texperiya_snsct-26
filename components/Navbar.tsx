@@ -62,9 +62,9 @@ const Navbar: React.FC = () => {
         {/* Mobile Flex Layout: Logo | Text | Logo Row */}
         <div className="flex md:hidden flex-col items-center gap-1 w-full px-2">
           {/* Main Row: Logo - Text - Logo */}
-          <div className="grid grid-cols-[70px_1fr_70px] xs:grid-cols-[90px_1fr_90px] items-center w-full gap-2">
+          <div className="grid grid-cols-[55px_1fr_110px] xs:grid-cols-[70px_1fr_140px] items-center w-full gap-2">
             {/* Left Logo */}
-            <div className="h-16 xs:h-20 w-full flex items-center justify-start">
+            <div className="h-10 xs:h-12 w-full flex items-center justify-start">
               <img src={logo2} alt="Logo 1" className="h-full w-auto object-contain" />
             </div>
 
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Right Logo */}
-            <div className="h-16 xs:h-20 w-full flex items-center justify-end">
+            <div className="h-12 xs:h-16 w-full flex items-center justify-end">
               <img src={brandingImg} alt="Logo 2" className="h-full w-auto object-contain" />
             </div>
           </div>
