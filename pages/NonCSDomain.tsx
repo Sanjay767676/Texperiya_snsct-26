@@ -81,10 +81,9 @@ const NonCSDomain: React.FC = () => {
     "Ideafest": { type: 'technical', description: "The ultimate brainstorming session for food industry solutions." },
 
     // MCT
-    "Technical Quiz": { type: 'technical', description: "Battle of wits on robotics, automation and mechatronics." },
     "Line Follower": { type: 'technical', description: "Build robots that navigate complex paths with precision." },
-    "Start Up Presentation": { type: 'technical', description: "Pitch your mechatronics-focused business to investors." },
-    "IPL Auction": { type: 'non-technical', description: "Manage budgets and bid for players in the cricket auction." },
+    "Robo Race": { type: 'technical', description: "Compete in a high-speed robot racing challenge." },
+    "Battle Zone": { type: 'non-technical', description: "Engage in strategic battles with your team in a Esport environment." },
     "No Code Automation": { type: 'technical', description: "Implement automation logic using modern no-code platforms." },
     "Memerush": { type: 'non-technical', description: "Create the funniest and most relatable technical memes." },
     "Ad-Zap": { type: 'non-technical', description: "Fast-paced mock advertisement performance challenge." },
@@ -250,17 +249,16 @@ const NonCSDomain: React.FC = () => {
       id: "mct",
       title: "MCT",
       events: [
-        "Technical Quiz",
         "Line Follower",
-        "Start Up Presentation",
-        "IPL Auction",
+        "Robo Race",
+        "Battle Zone",
         "Paper presentation",
         "No Code Automation",
         "Memerush",
         "Ad-Zap"
       ],
       workshops: [
-        "MCT Workshop"
+        "PLC Workshop"
       ],
       contact: "Student Coordinator: Mr. Sanjay Sarvesh - 8807543110"
     },
