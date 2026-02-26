@@ -183,14 +183,14 @@ const Home: React.FC = () => {
               className="inline-block bg-primary px-4 py-1 2xl:px-8 2xl:py-3 mb-6 2xl:mb-12 rounded shadow-sm relative overflow-hidden group"
             >
               <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-              <span className="text-black font-dirtyline tracking-[0.2em] uppercase text-xs 2xl:text-2xl relative z-10">National Level Symposium</span>
+              <span className="text-black font-dirtyline tracking-[0.2em] uppercase text-xs 2xl:text-2xl relative z-10">National Level Technical Fest</span>
             </motion.div>
 
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ type: "spring", damping: 15, delay: 0.6 }}
-              className="w-full max-w-[500px] sm:max-w-2xl md:max-w-7xl lg:max-w-[1400px] 2xl:max-w-[1800px] mx-auto mb-10 2xl:mb-24 px-4 transform hover:scale-[1.02] transition-transform duration-500"
+              className="w-full max-w-[650px] sm:max-w-4xl md:max-w-[95vw] lg:max-w-[1600px] 2xl:max-w-[2200px] mx-auto mb-10 2xl:mb-24 px-4 transform hover:scale-[1.02] transition-transform duration-500"
             >
               <img
                 src={image1}

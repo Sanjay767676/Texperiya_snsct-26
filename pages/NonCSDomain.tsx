@@ -142,7 +142,7 @@ const NonCSDomain: React.FC = () => {
         "Project Presentation",
         "Seed Detectives",
         "Mission Discovery",
-        "Photo Flash", 
+        "Photo Flash",
         "Farm Gear Flash"
       ],
       workshops: [
@@ -195,7 +195,7 @@ const NonCSDomain: React.FC = () => {
         "Tech Showcase"
       ],
       workshops: [],
-      contact: "Student Coordinator: M. Mukileswar - 6381261921, R. Devasudhan - 9790327187"
+      contact: "Student Coordinator: M. Mukileswar - 6381264921, R. Devasudhan - 9790327187"
     },
     {
       id: "ece",

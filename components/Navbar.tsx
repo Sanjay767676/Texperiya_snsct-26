@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
 
           {/* Left Side: Logo and Navigation */}
           <div className="flex items-center gap-8 2xl:gap-12">
-            <div className="h-20 md:h-28 2xl:h-36 w-auto flex items-center">
+            <div className="flex items-center" style={{ height: 'clamp(60px, 8vw, 120px)' }}>
               <img
                 src={logo2}
                 alt="SNS College of Technology"
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
 
           {/* Right Side: SNS Institutions Branding Banner */}
           <div className="flex items-center justify-end h-full">
-            <div className="h-20 md:h-24 2xl:h-32 w-auto flex items-center justify-end">
+            <div className="flex items-center justify-end" style={{ height: 'clamp(70px, 9.5vw, 140px)' }}>
               <img
                 src={brandingImg}
                 alt="1000 Startups GenAI"
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
           {/* Main Row: Logo - Text - Logo */}
           <div className="grid grid-cols-[55px_1fr_110px] xs:grid-cols-[70px_1fr_140px] items-center w-full gap-2">
             {/* Left Logo */}
-            <div className="h-10 xs:h-12 w-full flex items-center justify-start">
+            <div className="w-full flex items-center justify-start" style={{ height: 'clamp(45px, 10vw, 55px)' }}>
               <img src={logo2} alt="Logo 1" className="h-full w-auto object-contain" />
             </div>
 
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Right Logo */}
-            <div className="h-12 xs:h-16 w-full flex items-center justify-end">
+            <div className="w-full flex items-center justify-end" style={{ height: 'clamp(55px, 12vw, 65px)' }}>
               <img src={brandingImg} alt="Logo 2" className="h-full w-auto object-contain" />
             </div>
           </div>
