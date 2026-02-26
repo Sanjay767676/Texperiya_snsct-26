@@ -260,7 +260,7 @@ const NonCSDomain: React.FC = () => {
       workshops: [
         "PLC Workshop"
       ],
-      contact: "Student Coordinator: Mr. Sanjay Sarvesh - 8807543110"
+      contact: "Student Coordinator: Mr. Shanjai Sarwesh - 8807543110 , Mr Shaheer A - 9791285232 , Mr.Abishek M - 8667724432"
     },
     {
       id: "mech",
