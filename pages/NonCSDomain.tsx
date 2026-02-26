@@ -25,7 +25,8 @@ const NonCSDomain: React.FC = () => {
     "Project Presentation": { type: 'technical', description: "Present innovative projects that revolutionize agricultural practices." },
     "Seed Detectives": { type: 'non-technical', description: "Identify and classify diverse seeds based on their characteristics." },
     "Farm Gear Flash": { type: 'technical', description: "Demonstrate and explain complex modern agricultural machinery." },
-
+    "Mission Discovery": { type: 'technical', description: "Navigate through agricultural challenges and discover modern farming solutions." },
+    "Photo Flash": { type: 'technical', description: "Capture and showcase Talent through photography." },
     // AUTO
     "Auto Quiz": { type: 'technical', description: "Deep dive into automotive history, mechanics, and future trends." },
     "Auto Show": { type: 'non-technical', description: "Exhibition of unique and modified automotive designs." },
@@ -140,6 +141,8 @@ const NonCSDomain: React.FC = () => {
         "Plough Your Brain - Quiz Quest",
         "Project Presentation",
         "Seed Detectives",
+        "Mission Discovery",
+        "Photo Flash", 
         "Farm Gear Flash"
       ],
       workshops: [
@@ -159,7 +162,7 @@ const NonCSDomain: React.FC = () => {
       workshops: [
         "e-Vehicle Workshop"
       ],
-      contact: "Student Coordinator: - "
+      contact: "Student Coordinator: - Srikesav D - 9150846581"
     },
     {
       id: "bme",
