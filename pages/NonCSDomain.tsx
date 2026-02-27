@@ -146,7 +146,7 @@ const NonCSDomain: React.FC = () => {
         "Farm Gear Flash"
       ],
       workshops: [
-        "Plough to Processor: Robotics"
+        "Workshop on Plough to Processor: Robotics in Modern Farming"
       ],
       contact: "Student Coordinator: Mr.Shamkaran K - 9025291364, Ms. Athishta p - 9952401248"
     },
@@ -160,7 +160,7 @@ const NonCSDomain: React.FC = () => {
         "Slow Bike Race"
       ],
       workshops: [
-        "e-Vehicle Workshop"
+        "Workshop on Electric Vehicle(EV) Technology"
       ],
       contact: "Student Coordinator: - Srikesav D - 9150846581"
     },
@@ -192,7 +192,7 @@ const NonCSDomain: React.FC = () => {
         "Dumb Civil Charades",
         "Colour Your Thoughts",
         "Construct your Dream",
-        "Tech Showcase"
+        
       ],
       workshops: [],
       contact: "Student Coordinator: M. Mukileswar - 6381264921, R. Devasudhan - 9790327187"
@@ -208,32 +208,36 @@ const NonCSDomain: React.FC = () => {
         "App Pitching",
         "SparkX (Paper Presentation)",
         "IPL Team Builder Auction",
-        "Electroverse"
+        "Electroverse",
+        "Tech Showcase",
+        "E-Sports"
       ],
       workshops: [],
-      contact: "Student Coordinator: Ms.S.Jeni Mirpha - 99420 50601, Ms.Ambreen - 9500897950"
+      contact: "Student Coordinator: Ms.S.Jeni Mizpha - 99420 50601, Ms.Ambreen - 9500897950"
     },
     {
       id: "eee",
       title: "EEE",
       events: [
-        "E-Sports",
         "Short film",
         "Gaming",
         "Protothon",
         "Quad Killer Quest",
         "Reel Creation",
         "Paper Presentation",
-        "Build it in 60"
+        "Build it in 60",
+        "Reverse Debate"
+
       ],
-      workshops: [],
+      workshops: [
+        "Workshop on Intelligent EV Monitoring and Diagnostics"
+      ],
       contact: "Student Coordinator: Mr.D.Jegadeeswaran - 9344598402, Ms. G.Divya - 8754511096"
     },
     {
       id: "ft",
       title: "FT",
       events: [
-        "Reverse Debate",
         "Paper Presenation",
         "Flameless Cooking",
         "Treasure Hunt",
@@ -261,7 +265,7 @@ const NonCSDomain: React.FC = () => {
         "Ad-Zap"
       ],
       workshops: [
-        "PLC Workshop"
+        "Workshop on Industrial Automation with PLC"
       ],
       contact: "Student Coordinator: Mr. Shanjai Sarwesh - 8807543110 , Mr Shaheer A - 9791285232 , Mr.Abishek M - 8667724432"
     },
@@ -269,10 +273,10 @@ const NonCSDomain: React.FC = () => {
       id: "mech",
       title: "MECH",
       events: [
-        "Lathe Master (Tool Finder)",
+        "Lathe Master",
         "NexGen Tech Quiz",
         "Public Speaking",
-        "Tool finder",
+        "Tool Finder",
         "Connections",
         "TECH TALKS (Paper)",
         "Mechanical QUIZ",
@@ -280,7 +284,7 @@ const NonCSDomain: React.FC = () => {
         "Mechamind"
       ],
       workshops: [
-        "MECH Workshop"
+        "From engineering blueprint to reality : A workshop on GD&T essentials"
       ],
       contact: "Student Coordinator: Navaneetha Krishnan - 88386 92752"
     },
@@ -299,7 +303,7 @@ const NonCSDomain: React.FC = () => {
         "Junk wars"
       ],
       workshops: [],
-      contact: "Student Coordinator: R.R.Abhinand - 9027175873, N.Bhava Priyan - 8792870689"
+      contact: "Student Coordinator: Mr.Raghav Chandan - 7358844577"
     }
   ];
 
