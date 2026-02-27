@@ -213,7 +213,7 @@ const NonCSDomain: React.FC = () => {
         "E-Sports"
       ],
       workshops: [],
-      contact: "Student Coordinator: Ms.S.Jeni Mizpha - 99420 50601, Ms.Ambreen - 9500897950"
+      contact: "Student Coordinator: Ms.S.Jeni Mizpha - 99420 50601, Vishnu M S - 9994755905"
     },
     {
       id: "eee",
@@ -242,14 +242,13 @@ const NonCSDomain: React.FC = () => {
         "Flameless Cooking",
         "Treasure Hunt",
         "Be a Chef",
+        "Technical Quiz",
         "Dark Kitchen Detectives",
         "Short film",
         "Fruit and Vegetable Carving",
         "Ideafest"
       ],
-      workshops: [
-        "Technical Workshop"
-      ],
+      workshops: [],
       contact: "Student Coordinator: R.Chandru - 9994345980"
     },
     {
@@ -284,7 +283,7 @@ const NonCSDomain: React.FC = () => {
         "Mechamind"
       ],
       workshops: [
-        "From engineering blueprint to reality : A workshop on GD&T essentials"
+        "From Engineering Blueprint to Reality : A Workshop on GD&T Essentials"
       ],
       contact: "Student Coordinator: Navaneetha Krishnan - 88386 92752"
     },
