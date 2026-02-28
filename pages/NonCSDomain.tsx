@@ -213,7 +213,7 @@ const NonCSDomain: React.FC = () => {
         "E-Sports"
       ],
       workshops: [],
-      contact: "Student Coordinator: Ms.S.Jeni Mizpha - 99420 50601, Vishnu M S - 9994755905"
+      contact: "Student Coordinator: Ms.S.Jeni Mizpha - 99420 50601, Vishnu M S - 9994755905 "
     },
     {
       id: "eee",
@@ -266,7 +266,7 @@ const NonCSDomain: React.FC = () => {
       workshops: [
         "Workshop on Industrial Automation with PLC"
       ],
-      contact: "Student Coordinator: Mr. Shanjai Sarwesh - 8807543110 , Mr Shaheer A - 9791285232 , Mr.Abishek M - 8667724432"
+      contact: "Student Coordinator: Mr. Deepak -  82200 13183 , Mr Shaheer A - 9791285232 , Mr.Abishek M - 8667724432"
     },
     {
       id: "mech",
