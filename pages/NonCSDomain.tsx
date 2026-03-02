@@ -188,10 +188,10 @@ const NonCSDomain: React.FC = () => {
         "Code Cracking",
         "CAD Modelling Quest",
         "Aquahack",
-        "Map Charades",
-        "Dumb Civil Charades",
+        "Paper Fest",
+        "Construct IQ",
         "Colour Your Thoughts",
-        "Construct your Dream",
+        "Bridge Wars",
         
       ],
       workshops: [],

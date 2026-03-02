@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Center: Institutional Details */}
-          <div className="flex flex-col items-center text-center px-4">
+          <div className="flex flex-col items-center text-center px-3">
             <h1
               className="text-xl lg:text-3xl 2xl:text-5xl font-bold text-slate-900 leading-tight uppercase tracking-wide whitespace-nowrap"
               style={{ fontFamily: '"Times New Roman", Times, serif' }}
