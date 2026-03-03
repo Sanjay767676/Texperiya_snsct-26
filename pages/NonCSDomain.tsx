@@ -100,19 +100,56 @@ const NonCSDomain: React.FC = () => {
     "Screensmith (CAD Modeling)": { type: 'technical', description: "2D and 3D drafting challenge using industry standard CAD." },
     "Mechamind(Technical Event)": { type: 'technical', description: "Problem solving challenge for complex mechanical systems." },
 
-    // MMCT
     "CAD Design Challenge": { type: 'technical', description: "Create intricate digital designs for additive manufacturing." },
     "AM Ideathon": { type: 'technical', description: "Design-centric solutions for 3D printing and smart materials." },
     "Innoventure": { type: 'technical', description: "A business-focused venture for manufacturing innovations." },
     "Esports": { type: 'non-technical', description: "Show off your gaming prowess in the MMCT esports arena." },
-    "Paper Presentation": { type: 'technical', description: "Presentations and discussions on future-ready research and multi-disciplinary engineering trends." },
     "Best Manager": { type: 'non-technical', description: "Test your leadership, crisis management and team skills." },
     "Ted X": { type: 'non-technical', description: "Platform for ideas worth spreading beyond engineering." },
     "RC Car Race": { type: 'non-technical', description: "High-octane racing with remote-controlled vehicles." },
     "Junk wars": { type: 'non-technical', description: "Build something epic out of recycled scrap and junk." },
 
     // Shared Keys
-    "Paper Presenation": { type: 'technical', description: "Research-driven presentation of future technology and engineering excellence." }
+    "Idea to Impact (Ideathon)": { type: 'technical', description: "Pitch solutions for current challenges in the aviation industry." },
+    "Bionexus (Poster)": { type: 'technical', description: "Visual storytelling of biomedical engineering concepts via poster designs." },
+    "Medxplore (Paper)": { type: 'technical', description: "Academic presentation of biomedical research and breakthroughs." },
+    "Paper Fest": { type: 'technical', description: "A grand stage for presenting research papers on civil engineering innovations." },
+    "Construct IQ": { type: 'technical', description: "Test your intelligence and knowledge in structural design and construction." },
+    "Bridge Wars": { type: 'technical', description: "Design and build scale model bridges to compete for strength and efficiency." },
+    "Paper Presentation": { type: 'technical', description: "Research-driven presentation of future technology and engineering excellence." },
+    "TECH TALKS (Paper)": { type: 'technical', description: "Inspiring presentations on core mechanical engineering." },
+    "Paper presentation": { type: 'technical', description: "Presentations and discussions on future-ready research and multi-disciplinary engineering trends." },
+
+    // Workshops
+    "Workshop on 3D Printing": { type: 'technical', description: "Hands-on session on additive manufacturing and 3D design." },
+    "Workshop on Plough to Processor: Robotics in Modern Farming": { type: 'technical', description: "Explore the role of robotics and automation in modern agriculture." },
+    "Workshop on Electric Vehicle(EV) Technology": { type: 'technical', description: "Deep dive into EV architecture, battery management, and future trends." },
+    "Hands on training in IoT": { type: 'technical', description: "Practical session on building IoT systems and smart devices." },
+    "Workshop on Intelligent EV Monitoring and Diagnostics": { type: 'technical', description: "Advanced session on monitoring and troubleshooting EV systems." },
+    "Workshop on Industrial Automation with PLC": { type: 'technical', description: "Learn to program and manage industrial automation using PLCs." },
+    "From Engineering Blueprint to Reality : A Workshop on GD&T Essentials": { type: 'technical', description: "Understand Geometric Dimensioning and Tolerancing for manufacturing." }
+  };
+
+  const renderDescription = (text: string) => {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const parts = text.split(urlRegex);
+    return parts.map((part, i) => {
+      if (part.match(urlRegex)) {
+        return (
+          <a
+            key={i}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline hover:text-black transition-colors break-all"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
   };
 
   const sections = [
@@ -192,7 +229,7 @@ const NonCSDomain: React.FC = () => {
         "Construct IQ",
         "Colour Your Thoughts",
         "Bridge Wars",
-        
+
       ],
       workshops: [],
       contact: "Student Coordinator: M. Mukileswar - 6381264921, R. Devasudhan - 9790327187"
@@ -442,6 +479,23 @@ const NonCSDomain: React.FC = () => {
           <p className="max-w-3xl mx-auto text-slate-400 text-lg md:text-xl font-medium leading-relaxed italic">
             "Innovation beyond Boundaries"
           </p>
+
+          <div className="mt-16 flex flex-wrap justify-center gap-6 max-w-5xl mx-auto px-6">
+            {[
+              { label: "Register for Event", link: "https://forms.gle/27XyRUbp5Zy2PNEe6" },
+              { label: "Register for Hackathon", link: "https://forms.gle/ZYJFPKjyTocoF3aSA" },
+              { label: "Register for Workshops", link: "https://forms.gle/DV55ypa18nYERWFw7" }
+            ].map((btn, rIdx) => (
+              <div
+                key={rIdx}
+                onClick={() => window.open(btn.link, '_blank')}
+                className="group relative px-8 py-4 bg-white hover:bg-[#FFC107] border-[3px] border-black rounded-[15px_25px_10px_20px] flex items-center justify-center gap-4 transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-md text-center cursor-pointer min-w-[280px]"
+              >
+                <span className="text-lg font-black text-black tracking-tight italic uppercase leading-tight">{btn.label}</span>
+                <span className="material-symbols-outlined text-2xl text-black group-hover:translate-x-1 transition-transform duration-300 font-bold">arrow_forward</span>
+              </div>
+            ))}
+          </div>
         </div>
       </header>
 
@@ -485,7 +539,7 @@ const NonCSDomain: React.FC = () => {
                       {/* Description Overlay - Hidden by default, shown on hover */}
                       <div className="absolute inset-0 bg-[#FFC107] flex items-center justify-center p-4 text-center opacity-0 translate-y-4 transition-all duration-300 pointer-events-none group-hover/item:opacity-100 group-hover/item:translate-y-0 group-hover/item:pointer-events-auto z-20">
                         <p className="text-[12px] font-bold text-black leading-tight whitespace-pre-line tracking-tight">
-                          {eventData[event]?.description || "Description coming soon..."}
+                          {renderDescription(eventData[event]?.description || "Description coming soon...")}
                         </p>
                       </div>
                     </div>
@@ -499,11 +553,16 @@ const NonCSDomain: React.FC = () => {
                       <span className="text-[14px] font-black uppercase tracking-[0.4em] text-black italic">Workshops</span>
                     </div>
                     <div className="flex flex-col pb-8">
-                      {dept.workshops.map((ws, idx) => (
-                        <div key={idx} className="flex flex-col justify-center items-center py-4 px-8 transition-colors cursor-default">
-                          <h3 className="font-space font-black text-[20px] uppercase leading-none tracking-tight text-black text-center">
+                      {dept.workshops.map((ws, wIdx) => (
+                        <div key={wIdx} className="group/item relative flex flex-col justify-center items-center py-4 px-8 transition-colors cursor-default border-b border-black/5 last:border-0 overflow-hidden min-h-[80px]">
+                          <h3 className="font-space font-black text-[20px] uppercase leading-none tracking-tight text-black text-center transition-all duration-300 group-hover/item:opacity-0 group-hover/item:scale-90">
                             {ws}
                           </h3>
+                          <div className="absolute inset-0 bg-[#FFC107] flex items-center justify-center p-4 text-center opacity-0 translate-y-4 transition-all duration-300 pointer-events-none group-hover/item:opacity-100 group-hover/item:translate-y-0 group-hover/item:pointer-events-auto z-20">
+                            <p className="text-[12px] font-bold text-black leading-tight whitespace-pre-line tracking-tight">
+                              {renderDescription(eventData[ws]?.description || "Learn more about this workshop...")}
+                            </p>
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -523,16 +582,16 @@ const NonCSDomain: React.FC = () => {
         </div>
 
         {/* Pre-footer Registration Boxes */}
-        <div className="mt-40 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto pb-20 px-6">
+        <div className="mt-40 flex flex-wrap justify-center gap-6 max-w-5xl mx-auto pb-20 px-6">
           {[
-            { label: "Register for Events", link: "https://forms.gle/27XyRUbp5Zy2PNEe6" },
-            { label: "Register for Workshop", link: "https://forms.gle/DV55ypa18nYERWFw7" },
-            { label: "Register for Hackathons", link: "https://forms.gle/ZYJFPKjyTocoF3aSA" }
+            { label: "Register for Event", link: "https://forms.gle/27XyRUbp5Zy2PNEe6" },
+            { label: "Register for Hackathon", link: "https://forms.gle/ZYJFPKjyTocoF3aSA" },
+            { label: "Register for Workshops", link: "https://forms.gle/DV55ypa18nYERWFw7" }
           ].map((btn, idx) => (
             <div
               key={idx}
               onClick={() => window.open(btn.link, '_blank')}
-              className="group relative px-6 py-8 bg-white hover:bg-[#FFC107] border-[3px] border-black rounded-[20px_35px_15px_30px] flex flex-col items-center justify-center gap-4 transition-all hover:-translate-y-2 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-lg text-center cursor-pointer"
+              className="group relative px-10 py-6 bg-white hover:bg-[#FFC107] border-[3px] border-black rounded-[20px_35px_15px_30px] flex items-center justify-center gap-4 transition-all hover:-translate-y-2 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-0 active:shadow-none shadow-lg text-center cursor-pointer min-w-[300px]"
             >
               <span className="text-xl font-black text-black tracking-tight italic uppercase leading-tight">{btn.label}</span>
               <span className="material-symbols-outlined text-3xl text-black group-hover:translate-x-2 transition-transform duration-300 font-bold">arrow_forward</span>

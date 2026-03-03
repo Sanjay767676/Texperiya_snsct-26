@@ -52,6 +52,11 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
   const headerRef = useRef<HTMLHeadingElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const pathRef = useRef<HTMLElement>(null);
+
+  const scrollToPath = () => {
+    pathRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   useEffect(() => {
     if (headerRef.current) {
@@ -135,6 +140,15 @@ const Home: React.FC = () => {
         .bracket-tr { top: 12px; right: 12px; border-top: 2px solid; border-right: 2px solid; }
         .bracket-bl { bottom: 12px; left: 12px; border-bottom: 2px solid; border-left: 2px solid; }
         .bracket-br { bottom: 12px; right: 12px; border-bottom: 2px solid; border-right: 2px solid; }
+        .sketchy-button {
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 2px 5px 0 0 black;
+            transition: all 0.2s;
+        }
+        .sketchy-button:hover {
+            box-shadow: 1px 2px 0 0 black;
+            transform: translateY(2px);
+        }
       `}} />
 
       {/* Animated Background Layers */}
@@ -176,15 +190,31 @@ const Home: React.FC = () => {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
-            <motion.div
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="inline-block bg-primary px-4 py-1 2xl:px-8 2xl:py-3 mb-6 2xl:mb-12 rounded shadow-sm relative overflow-hidden group"
-            >
-              <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-              <span className="text-black font-dirtyline tracking-[0.2em] uppercase text-xs 2xl:text-2xl relative z-10">National Level Technical Fest</span>
-            </motion.div>
+            <div className="flex flex-col md:flex-row items-center gap-4 2xl:gap-8 mb-2 2xl:mb-6">
+              <motion.div
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                className="inline-block bg-primary px-4 py-1 2xl:px-8 2xl:py-3 rounded shadow-sm relative overflow-hidden group"
+              >
+                <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+                <span className="text-black font-dirtyline tracking-[0.2em] uppercase text-xs 2xl:text-2xl relative z-10"> A National Level Technical Fest</span>
+              </motion.div>
+
+              <motion.button
+                type="button"
+                onClick={scrollToPath}
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-6 py-2 bg-white hover:bg-primary border-[3px] border-black rounded-[18px_32px_15px_28px] flex items-center gap-3 transition-all hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] active:shadow-none"
+              >
+                <span className="text-sm 2xl:text-2xl font-space font-black text-black tracking-tight italic uppercase">Register Now</span>
+                <span className="material-symbols-outlined text-xl text-black group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+              </motion.button>
+            </div>
 
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
@@ -203,7 +233,7 @@ const Home: React.FC = () => {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.8 }}
-              className="2xl:scale-150 2xl:mb-32"
+              className="flex flex-col items-center gap-8 2xl:scale-150 2xl:mb-48 mb-20"
             >
               <CountdownTimer />
             </motion.div>
@@ -264,7 +294,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <section ref={pathRef} className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
