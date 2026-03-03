@@ -319,7 +319,7 @@ const Home: React.FC = () => {
             <div className="corner-bracket bracket-br opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <div className="flex flex-col items-start sm:items-center">
               <span className="text-2xl md:text-3xl font-space font-black text-black tracking-tight italic uppercase">Computer Science</span>
-              <span className="text-sm md:text-base font-space font-medium text-black/60 -mt-1">Related domain</span>
+              <span className="text-sm md:text-base font-space font-medium text-black/60 -mt-1">Related departments</span>
             </div>
             <span className="material-symbols-outlined text-4xl text-black group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
           </motion.button>
@@ -338,7 +338,7 @@ const Home: React.FC = () => {
             <div className="corner-bracket bracket-bl opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <div className="flex flex-col items-start sm:items-center">
               <span className="text-2xl md:text-3xl font-space font-black text-black tracking-tight italic transition-colors uppercase">Non Computer Science</span>
-              <span className="text-sm md:text-base font-space font-medium text-black/60 -mt-1">Related domain</span>
+              <span className="text-sm md:text-base font-space font-medium text-black/60 -mt-1">Related departments</span>
             </div>
             <span className="material-symbols-outlined text-4xl text-black group-hover:translate-x-2 transition-all duration-300">arrow_forward</span>
           </motion.button>
