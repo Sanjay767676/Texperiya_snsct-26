@@ -462,17 +462,17 @@ const NonCSDomain: React.FC = () => {
         ))}
       </div>
 
-      <header className="relative pt-48 pb-24 px-6 cyber-grid overflow-hidden z-10">
+      <header className="relative pt-24 pb-12 px-6 cyber-grid overflow-hidden z-10">
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="flex justify-between items-center mb-12 opacity-30">
+          <div className="flex justify-between items-center mb-6 opacity-30">
             <div className="text-[10px] font-mono font-bold tracking-[0.3em] uppercase hidden md:block">Process: 0x8E11</div>
             <div className="text-[10px] font-mono font-bold tracking-[0.3em] uppercase hidden md:block">Link: ENCRYPTED</div>
             <div className="text-[10px] font-mono font-bold tracking-[0.3em] uppercase hidden md:block">Root: NON_CS_DOMAIN</div>
           </div>
-          <div className="inline-block px-6 py-2 mb-8 bg-black text-[#FFC107] font-black text-[10px] md:text-xs uppercase tracking-[0.4em]">
+          <div className="inline-block px-6 py-2 mb-4 bg-black text-[#FFC107] font-black text-[10px] md:text-xs uppercase tracking-[0.4em]">
             Domain Matrix
           </div>
-          <h1 ref={headerRef} className="text-5xl md:text-9xl 2xl:text-[12rem] font-black mb-8 uppercase leading-tight text-black tracking-tighter">
+          <h1 ref={headerRef} className="text-5xl md:text-9xl 2xl:text-[12rem] font-black mb-4 uppercase leading-tight text-black tracking-tighter">
             NON-COMPUTER <br />
             <span className="text-[#FFC107] italic">SCIENCE</span>
           </h1>
@@ -480,7 +480,7 @@ const NonCSDomain: React.FC = () => {
             "Innovation beyond Boundaries"
           </p>
 
-          <div className="mt-16 flex flex-wrap justify-center gap-6 max-w-5xl mx-auto px-6">
+          <div className="mt-8 flex flex-wrap justify-center gap-6 max-w-5xl mx-auto px-6">
             {[
               { label: "Register for Event", link: "https://forms.gle/27XyRUbp5Zy2PNEe6" },
               { label: "Register for Hackathon", link: "https://forms.gle/ZYJFPKjyTocoF3aSA" },
@@ -499,7 +499,7 @@ const NonCSDomain: React.FC = () => {
         </div>
       </header>
 
-      <main className="max-w-[1750px] 2xl:max-w-[2200px] mx-auto px-6 py-24 relative z-10">
+      <main className="max-w-[1750px] 2xl:max-w-[2200px] mx-auto px-6 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 gap-10 2xl:gap-14 items-stretch">
           {sections.map((dept, idx) => (
             <motion.div
@@ -582,7 +582,7 @@ const NonCSDomain: React.FC = () => {
         </div>
 
         {/* Pre-footer Registration Boxes */}
-        <div className="mt-40 flex flex-wrap justify-center gap-6 max-w-5xl mx-auto pb-20 px-6">
+        <div className="mt-20 flex flex-wrap justify-center gap-6 max-w-5xl mx-auto pb-20 px-6">
           {[
             { label: "Register for Event", link: "https://forms.gle/27XyRUbp5Zy2PNEe6" },
             { label: "Register for Hackathon", link: "https://forms.gle/ZYJFPKjyTocoF3aSA" },
