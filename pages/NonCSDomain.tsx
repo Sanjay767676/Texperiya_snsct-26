@@ -127,6 +127,7 @@ const NonCSDomain: React.FC = () => {
     "Hands on training in IoT": { type: 'technical', description: "Practical session on building IoT systems and smart devices." },
     "Workshop on Intelligent EV Monitoring and Diagnostics": { type: 'technical', description: "Advanced session on monitoring and troubleshooting EV systems." },
     "Workshop on Industrial Automation with PLC": { type: 'technical', description: "Learn to program and manage industrial automation using PLCs." },
+    "Workshop on Graphics Design": { type: 'technical', description: ""Learn about Colour theory, typography & layout. Create impactful visuals and turn your ideas into visual identity" },
     "From Engineering Blueprint to Reality : A Workshop on GD&T Essentials": { type: 'technical', description: "Understand Geometric Dimensioning and Tolerancing for manufacturing." }
   };
 
@@ -293,7 +294,6 @@ const NonCSDomain: React.FC = () => {
       title: "MCT",
       events: [
         "Line Follower",
-        "Robo Race",
         "Battle Zone",
         "Paper presentation",
         "No Code Automation",
@@ -302,6 +302,7 @@ const NonCSDomain: React.FC = () => {
       ],
       workshops: [
         "Workshop on Industrial Automation with PLC"
+        "Workshop on Graphics Design"
       ],
       contact: "Student Coordinator: Mr. Deepak -  82200 13183 , Mr Shaheer A - 9791285232 , Mr.Abishek M - 8667724432"
     },
@@ -334,7 +335,6 @@ const NonCSDomain: React.FC = () => {
         "Esports",
         "Paper presentation",
         "Best Manager",
-        "Ted X",
         "RC Car Race",
         "Junk wars"
       ],
