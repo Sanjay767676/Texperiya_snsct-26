@@ -8,6 +8,7 @@ import ComputerScienceEvents from './pages/ComputerScienceEvents';
 import NonCSDomain from './pages/NonCSDomain';
 import SplashScreen from './components/SplashScreen';
 import ScrollToTop from './components/ScrollToTop';
+import ScrollingBanner from './components/ScrollingBanner';
 
 const App: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -36,6 +37,7 @@ const App: React.FC = () => {
       ) : (
         <div className="min-h-screen flex flex-col bg-background-light transition-colors duration-300">
           <Navbar />
+          <ScrollingBanner />
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
